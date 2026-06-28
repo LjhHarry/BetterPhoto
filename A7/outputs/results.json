@@ -1,0 +1,150 @@
+{
+  "per_config": {
+    "PartialConv_block": {
+      "psnr": 24.500407731873825,
+      "ssim": 0.8317999690771103,
+      "l1_improvement": 54.05724673664035,
+      "inference_time_ms": 1.1183901274204253,
+      "gpu_memory_mb": 122.1953125,
+      "params": 396771.0
+    },
+    "PartialConv_blur": {
+      "psnr": 23.15515692469822,
+      "ssim": 0.7919779270887375,
+      "l1_improvement": -41.515666377991806,
+      "inference_time_ms": 0.788921589255333,
+      "gpu_memory_mb": 125.228515625,
+      "params": 396771.0
+    },
+    "PartialConv_jpeg": {
+      "psnr": 25.08599466681082,
+      "ssim": 0.8083784580230713,
+      "l1_improvement": -54.07927986598081,
+      "inference_time_ms": 0.7440243309736252,
+      "gpu_memory_mb": 128.26171875,
+      "params": 396771.0
+    },
+    "GatedConv_block": {
+      "psnr": 23.430816627286788,
+      "ssim": 0.7973773926496506,
+      "l1_improvement": 38.48949507637044,
+      "inference_time_ms": 2.164276076555252,
+      "gpu_memory_mb": 157.60498046875,
+      "params": 468531.0
+    },
+    "GatedConv_blur": {
+      "psnr": 23.01945853901243,
+      "ssim": 0.7635114639997482,
+      "l1_improvement": -51.821873518073026,
+      "inference_time_ms": 2.1752295684814453,
+      "gpu_memory_mb": 160.69287109375,
+      "params": 468531.0
+    },
+    "GatedConv_jpeg": {
+      "psnr": 23.863628444179202,
+      "ssim": 0.7885618209838867,
+      "l1_improvement": -90.25989713170549,
+      "inference_time_ms": 2.039338313341141,
+      "gpu_memory_mb": 164.28076171875,
+      "params": 468531.0
+    },
+    "LaMa_block": {
+      "psnr": 21.855142687608257,
+      "ssim": 0.716653510928154,
+      "l1_improvement": 22.913731136963236,
+      "inference_time_ms": 1.8808772337436677,
+      "gpu_memory_mb": 141.30322265625,
+      "params": 774507.0
+    },
+    "LaMa_blur": {
+      "psnr": 22.133584099295845,
+      "ssim": 0.6856396347284317,
+      "l1_improvement": -92.16359907875196,
+      "inference_time_ms": 1.4673866319656372,
+      "gpu_memory_mb": 134.6064453125,
+      "params": 774507.0
+    },
+    "LaMa_jpeg": {
+      "psnr": 23.29899079844051,
+      "ssim": 0.7232382148504257,
+      "l1_improvement": -122.74617166464958,
+      "inference_time_ms": 2.536367292404175,
+      "gpu_memory_mb": 140.525390625,
+      "params": 774507.0
+    },
+    "PSR-Net_block": {
+      "mask_mean": 0.46112602949142456,
+      "iou": 0.07946395874023438,
+      "mask_contrast": 0.9975965768098831,
+      "psnr": 12.490301884923952,
+      "ssim": 0.8211366534233093,
+      "l1_improvement": -2.9090214883869607,
+      "inference_time_ms": 1.0228409975767137,
+      "gpu_memory_mb": 102.5263671875,
+      "params": 271636.0
+    },
+    "PSR-Net_blur": {
+      "mask_mean": 6.044682991528127e-20,
+      "iou": 0.0,
+      "psnr": 22.555270120573546,
+      "ssim": 0.8666719496250153,
+      "l1_improvement": 0.0,
+      "inference_time_ms": 1.0754697489738465,
+      "gpu_memory_mb": 104.6044921875,
+      "params": 271636.0
+    },
+    "PSR-Net_jpeg": {
+      "mask_mean": 3.9225918158081186e-06,
+      "iou": 2.940319422608185e-05,
+      "mask_contrast": 0.6844698376953602,
+      "psnr": 25.48621764563316,
+      "ssim": 0.8830253481864929,
+      "l1_improvement": -0.0007032515620343097,
+      "inference_time_ms": 0.6445340991020203,
+      "gpu_memory_mb": 106.6826171875,
+      "params": 271636.0
+    }
+  },
+  "per_method": {
+    "PartialConv": {
+      "psnr": 24.24718644112762,
+      "ssim": 0.8107187847296397,
+      "l1_improvement": -13.845899835777422,
+      "inference_time_ms": 0.8837786825497945,
+      "gpu_memory_mb": 125.228515625,
+      "params": 396771.0
+    },
+    "GatedConv": {
+      "psnr": 23.437967870159472,
+      "ssim": 0.7831502258777618,
+      "l1_improvement": -34.530758524469356,
+      "inference_time_ms": 2.126281319459279,
+      "gpu_memory_mb": 160.85953776041666,
+      "params": 468531.0
+    },
+    "LaMa": {
+      "psnr": 22.42923919511487,
+      "ssim": 0.7085104535023371,
+      "l1_improvement": -63.998679868812765,
+      "inference_time_ms": 1.96154371937116,
+      "gpu_memory_mb": 138.81168619791666,
+      "params": 774507.0
+    },
+    "PSR-Net": {
+      "mask_mean": 0.1537099840277468,
+      "iou": 0.026497787311486817,
+      "mask_contrast": 0.8410332072526217,
+      "psnr": 20.177263217043553,
+      "ssim": 0.8569446504116058,
+      "l1_improvement": -0.969908246649665,
+      "inference_time_ms": 0.9142816152175269,
+      "gpu_memory_mb": 104.6044921875,
+      "params": 271636.0
+    }
+  },
+  "degradation_types": [
+    "block",
+    "blur",
+    "jpeg"
+  ]
+}

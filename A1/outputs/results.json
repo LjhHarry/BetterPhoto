@@ -1,0 +1,83 @@
+{
+  "experiment": "A1",
+  "description": "Adversarial Degradation Simulation & Historical Checkpoint Degradation",
+  "config": {
+    "epochs": 80,
+    "batch_size": 16,
+    "image_size": 64,
+    "lambda_sparse": 0.1,
+    "device": "cuda"
+  },
+  "metrics": {
+    "Block": {
+      "psnr_mean": 19.018482,
+      "psnr_std": 2.799166,
+      "ssim_mean": 0.89792,
+      "ssim_std": 0.027589,
+      "l1_loss_mean": 0.029945,
+      "l1_loss_std": 0.01145,
+      "iou_mean": 0.333274,
+      "iou_std": 0.241462,
+      "mask_contrast_ratio_mean": 71770.3017,
+      "mask_contrast_ratio_std": 86877.759683,
+      "mask_mean_mean": 0.000855,
+      "mask_mean_std": 0.000716,
+      "training_time_s": 20.6
+    },
+    "GaussianBlur": {
+      "psnr_mean": 22.66581,
+      "psnr_std": 1.447517,
+      "ssim_mean": 0.777227,
+      "ssim_std": 0.074704,
+      "l1_loss_mean": 0.034576,
+      "l1_loss_std": 0.010389,
+      "iou_mean": 0.0,
+      "iou_std": 0.0,
+      "mask_mean_mean": 0.0,
+      "mask_mean_std": 0.0,
+      "training_time_s": 25.7
+    },
+    "JPEG": {
+      "psnr_mean": 20.942833,
+      "psnr_std": 1.262325,
+      "ssim_mean": 0.703733,
+      "ssim_std": 0.091434,
+      "l1_loss_mean": 0.048456,
+      "l1_loss_std": 0.013845,
+      "iou_mean": 0.0,
+      "iou_std": 0.0,
+      "mask_mean_mean": 0.0,
+      "mask_mean_std": 0.0,
+      "training_time_s": 27.1
+    },
+    "Adversarial": {
+      "psnr_mean": 19.045559,
+      "psnr_std": 2.821695,
+      "ssim_mean": 0.89791,
+      "ssim_std": 0.027632,
+      "l1_loss_mean": 0.031053,
+      "l1_loss_std": 0.011423,
+      "iou_mean": 0.390039,
+      "iou_std": 0.287093,
+      "mask_contrast_ratio_mean": 109275.059448,
+      "mask_contrast_ratio_std": 105374.798641,
+      "mask_mean_mean": 0.00085,
+      "mask_mean_std": 0.000715,
+      "training_time_s": 31.6
+    },
+    "HistoricalCheckpoint": {
+      "psnr_mean": 41.452003,
+      "psnr_std": 1.901022,
+      "ssim_mean": 0.961954,
+      "ssim_std": 0.014951,
+      "l1_loss_mean": 0.006824,
+      "l1_loss_std": 0.001574,
+      "iou_mean": 0.458827,
+      "iou_std": 0.446498,
+      "mask_contrast_ratio_mean": 1.002218,
+      "mask_contrast_ratio_std": 0.313623,
+      "mask_mean_mean": 0.00963,
+      "mask_mean_std": 0.002754
+    }
+  }
+}
