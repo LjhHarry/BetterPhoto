@@ -1,0 +1,68 @@
+{
+  "experiment": "A2",
+  "description": "Iterative Selective Redrawing",
+  "config": {
+    "epochs": 80,
+    "batch_size": 16,
+    "image_size": 64,
+    "lambda_sparse": 0.1,
+    "num_rounds": 3,
+    "device": "cuda"
+  },
+  "single_round_baseline": {
+    "psnr_mean": 12.598836,
+    "psnr_std": 1.509219,
+    "ssim_mean": 0.827419,
+    "ssim_std": 0.044948,
+    "l1_loss_mean": 0.065662,
+    "l1_loss_std": 0.021465,
+    "mask_mean_mean": 0.0,
+    "mask_mean_std": 0.0
+  },
+  "iterative_rounds": [
+    {
+      "psnr_mean": 12.598836,
+      "psnr_std": 1.509219,
+      "ssim_mean": 0.827419,
+      "ssim_std": 0.044948,
+      "l1_loss_mean": 0.065662,
+      "l1_loss_std": 0.021465,
+      "mask_mean_mean": 0.0,
+      "mask_mean_std": 0.0,
+      "mask_contrast_mean": 0.0,
+      "mask_contrast_std": 0.0,
+      "round": 1
+    },
+    {
+      "psnr_mean": 12.598836,
+      "psnr_std": 1.509219,
+      "ssim_mean": 0.827419,
+      "ssim_std": 0.044948,
+      "l1_loss_mean": 0.065662,
+      "l1_loss_std": 0.021465,
+      "mask_mean_mean": 0.0,
+      "mask_mean_std": 0.0,
+      "mask_contrast_mean": 0.0,
+      "mask_contrast_std": 0.0,
+      "round": 2
+    },
+    {
+      "psnr_mean": 12.598836,
+      "psnr_std": 1.509219,
+      "ssim_mean": 0.827419,
+      "ssim_std": 0.044948,
+      "l1_loss_mean": 0.065662,
+      "l1_loss_std": 0.021465,
+      "mask_mean_mean": 0.0,
+      "mask_mean_std": 0.0,
+      "mask_contrast_mean": 0.0,
+      "mask_contrast_std": 0.0,
+      "round": 3
+    }
+  ],
+  "delta_analysis": {
+    "psnr_improvement": 0.0,
+    "ssim_improvement": 0.0,
+    "mask_sparsity_increase": -0.0
+  }
+}
