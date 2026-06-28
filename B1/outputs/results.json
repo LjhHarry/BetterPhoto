@@ -1,0 +1,60 @@
+{
+  "experiment": "B1_Style_Refinement",
+  "timestamp": "2026-06-16T19:55:27.479553",
+  "config": {
+    "mode": "simple",
+    "image_size": 512,
+    "batch_size": 2,
+    "epochs": 100,
+    "lambda_sparse": 0.05,
+    "train_samples": 500,
+    "model_params": 5835812
+  },
+  "training": {
+    "final_loss": 0.00103983273380436,
+    "final_l1": 0.0010349346799775959,
+    "final_mask_mean": 9.79610305512324e-05
+  },
+  "validation_metrics": {
+    "psnr": 58.45873091249021,
+    "ssim": 0.9992203140258789,
+    "lpips": 0.0008939048927277326,
+    "mask_mean": 9.799967665458098e-05
+  },
+  "baseline_comparison": {
+    "Raw AI": {
+      "edge_density": 0.00559347914531827,
+      "texture_variance": 0.0017789817259957392,
+      "inference_time_ms": 0,
+      "psnr": "N/A",
+      "ssim": "N/A",
+      "lpips_approx": "N/A"
+    },
+    "USM Sharpening": {
+      "edge_density": 0.0066604274325072765,
+      "texture_variance": 0.001771652566579481,
+      "inference_time_ms": 5.0,
+      "psnr": "N/A",
+      "ssim": "N/A",
+      "lpips_approx": "N/A"
+    },
+    "Full Texture Transfer": {
+      "edge_density": 0.0078125,
+      "texture_variance": 0.003245036117732525,
+      "inference_time_ms": 13.385621706644693
+    },
+    "PSR-Net Selective (Ours)": {
+      "edge_density": 0.005628309678286314,
+      "texture_variance": 0.0017864914843812585,
+      "masked_region_edge_density": 0.008680839091539383,
+      "mask_activation_ratio": 9.799966210266575e-05,
+      "inference_time_ms": 13.385621706644693
+    }
+  },
+  "files": {
+    "best_model": "/mnt/workspace/Experiments/B1/outputs/best_model.pt",
+    "training_curves": "/mnt/workspace/Experiments/B1/outputs/training_curves.png",
+    "comparison_grid": "/mnt/workspace/Experiments/B1/outputs/texture_injection_comparison.png",
+    "mask_overlay": "/mnt/workspace/Experiments/B1/outputs/mask_overlay.png"
+  }
+}

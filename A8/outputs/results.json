@@ -1,0 +1,97 @@
+{
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    1024
+  ],
+  "config": {
+    "epochs": 80,
+    "batch_size": 16,
+    "image_size": 64,
+    "train_samples": 500,
+    "test_samples": 50,
+    "lr": 0.001,
+    "lambda_sparse": 0.1,
+    "warmup_epochs": 40,
+    "base_channels": 64
+  },
+  "per_seed_final": {
+    "seed_42": {
+      "val_psnr": 12.627896543723073,
+      "val_ssim": 0.7553892284631729,
+      "val_l1_loss": 0.08235770277678967,
+      "val_mask_mean": 0.010229256004095078,
+      "val_mask_contrast": 2.9506568014621735,
+      "val_iou": 0.017033556009980237,
+      "params": 1082916
+    },
+    "seed_123": {
+      "val_psnr": 12.800464948214977,
+      "val_ssim": 0.8307890295982361,
+      "val_l1_loss": 0.060299520380795,
+      "val_mask_mean": 1.2203674525713057e-25,
+      "val_mask_contrast": 0.0,
+      "val_iou": 0.0,
+      "params": 1082916
+    },
+    "seed_456": {
+      "val_psnr": 12.305543893228409,
+      "val_ssim": 0.8223893493413925,
+      "val_l1_loss": 0.06539227068424225,
+      "val_mask_mean": 4.278578267731019e-31,
+      "val_mask_contrast": 0.0,
+      "val_iou": 0.0,
+      "params": 1082916
+    },
+    "seed_789": {
+      "val_psnr": 12.53919253663506,
+      "val_ssim": 0.8297643810510635,
+      "val_l1_loss": 0.06272852141410112,
+      "val_mask_mean": 8.223475012059112e-09,
+      "val_mask_contrast": 0.0,
+      "val_iou": 0.0,
+      "params": 1082916
+    },
+    "seed_1024": {
+      "val_psnr": 12.10603446525314,
+      "val_ssim": 0.8168264776468277,
+      "val_l1_loss": 0.06853560358285904,
+      "val_mask_mean": 1.7959859654846813e-22,
+      "val_mask_contrast": 0.0,
+      "val_iou": 0.0,
+      "params": 1082916
+    }
+  },
+  "summary": {
+    "val_psnr_mean": 12.475826477410932,
+    "val_psnr_std": 0.24424290777312238,
+    "val_psnr_min": 12.10603446525314,
+    "val_psnr_max": 12.800464948214977,
+    "val_ssim_mean": 0.8110316932201386,
+    "val_ssim_std": 0.028284008547158946,
+    "val_ssim_min": 0.7553892284631729,
+    "val_ssim_max": 0.8307890295982361,
+    "val_l1_loss_mean": 0.06786272376775741,
+    "val_l1_loss_std": 0.0077488373506811445,
+    "val_l1_loss_min": 0.060299520380795,
+    "val_l1_loss_max": 0.08235770277678967,
+    "val_mask_mean_mean": 0.002045852845514018,
+    "val_mask_mean_std": 0.00409170157929177,
+    "val_mask_mean_min": 4.278578267731019e-31,
+    "val_mask_mean_max": 0.010229256004095078,
+    "val_mask_contrast_mean": 0.5901313602924347,
+    "val_mask_contrast_std": 1.1802627205848695,
+    "val_mask_contrast_min": 0.0,
+    "val_mask_contrast_max": 2.9506568014621735,
+    "val_iou_mean": 0.0034067112019960473,
+    "val_iou_std": 0.0068134224039920945,
+    "val_iou_min": 0.0,
+    "val_iou_max": 0.017033556009980237,
+    "params_mean": 1082916.0,
+    "params_std": 0.0,
+    "params_min": 1082916.0,
+    "params_max": 1082916.0
+  }
+}

@@ -1,0 +1,20 @@
+\begin{table}[htbp]
+  \centering
+  \caption{Cost-Efficiency Comparison}
+  \label{tab:cost_efficiency}
+  \begin{tabular}{lrrrrr}
+    \toprule
+    Method & Time (ms) & FPS & Memory (MB) & Params (M) & PSNR (dB) \\
+    \midrule
+    PSR-Net (64×64) & 0.77 & 1297.4 & 9.9 & 1.08 & 19.3 \\
+    PSR-Net (128×128) & 0.83 & 1209.1 & 132.9 & 1.08 & 23.8 \\
+    PSR-Net (256×256) & 3.11 & 321.9 & 494.2 & 5.84 & 30.1 \\
+    PSR-Net (512×512) & 10.04 & 99.6 & 2460.3 & 5.84 & 36.6 \\
+    Full Regen (256×256) & 10.95 & 91.3 & 9636.6 & 32.77 & 26.9 \\
+    Full Regen (512×512) & 40.26 & 24.8 & 5149.0 & 32.77 & 12.8 \\
+    PSR-Net + Upscale (128→512) & 10.16 & 98.4 & 19466.5 & 1.08 & 23.8 \\
+    \midrule
+    \multicolumn{6}{l}{Cost Ratio (Full Regen / PSR-Net at 512): Time $\times$4.0, Memory $\times$2.1} \\
+    \bottomrule
+  \end{tabular}
+\end{table}

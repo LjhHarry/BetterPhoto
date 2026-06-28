@@ -1,0 +1,81 @@
+{
+  "PSR-Net 64": {
+    "inference_time_ms": 0.7707998079061508,
+    "fps": 1297.3537223841079,
+    "gpu_memory_mb": 9.9296875,
+    "params": 1082916,
+    "params_m": 1.082916,
+    "resolution": 64,
+    "model_type": "psrnet",
+    "psnr": 19.25224684594459
+  },
+  "PSR-Net 128": {
+    "inference_time_ms": 0.8270510959625245,
+    "fps": 1209.115137966412,
+    "gpu_memory_mb": 132.919921875,
+    "params": 1082916,
+    "params_m": 1.082916,
+    "resolution": 128,
+    "model_type": "psrnet",
+    "psnr": 23.792851658904453
+  },
+  "PSR-Net 256": {
+    "inference_time_ms": 3.1065318107604982,
+    "fps": 321.902385334079,
+    "gpu_memory_mb": 494.169921875,
+    "params": 5835812,
+    "params_m": 5.835812,
+    "resolution": 256,
+    "model_type": "psrnet",
+    "psnr": 30.05614132212034
+  },
+  "PSR-Net 512": {
+    "inference_time_ms": 10.04039409160614,
+    "fps": 99.59768420205826,
+    "gpu_memory_mb": 2460.3125,
+    "params": 5835812,
+    "params_m": 5.835812,
+    "resolution": 512,
+    "model_type": "psrnet",
+    "psnr": 36.63682600431915
+  },
+  "Full Regen 256": {
+    "inference_time_ms": 10.952554717063904,
+    "fps": 91.30289926258173,
+    "gpu_memory_mb": 9636.5625,
+    "params": 32770563,
+    "params_m": 32.770563,
+    "resolution": 256,
+    "model_type": "full_regen",
+    "psnr": 26.894195934921044
+  },
+  "Full Regen 512": {
+    "inference_time_ms": 40.25877080917358,
+    "fps": 24.8393078054965,
+    "gpu_memory_mb": 5148.97802734375,
+    "params": 32770563,
+    "params_m": 32.770563,
+    "resolution": 512,
+    "model_type": "full_regen",
+    "psnr": 12.796033945042439
+  },
+  "PSR-Net + Upscale 512": {
+    "inference_time_ms": 10.158785423338413,
+    "fps": 98.4369644920974,
+    "gpu_memory_mb": 19466.47802734375,
+    "params": 1082916,
+    "params_m": 1.082916,
+    "resolution": "128->512",
+    "model_type": "psrnet_upscale",
+    "psnr": 23.792851658904453
+  },
+  "PSR-Net 128 (bs=4)": {
+    "inference_time_ms": 4.9849738907814025,
+    "fps": 200.60285608501923,
+    "gpu_memory_mb": 746.44140625,
+    "params": 1082916,
+    "params_m": 1.082916,
+    "resolution": 128,
+    "model_type": "psrnet_batch4"
+  }
+}
