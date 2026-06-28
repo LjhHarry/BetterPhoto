@@ -1,0 +1,209 @@
+Device: cuda
+  [SDImageDataset] Loading 500 from larger cache: /mnt/workspace/Experiments/resources/sd_images/sd_s64_n10000_seed42.pt
+  [SDImageDataset] Loaded 500 images (subset of 10000)
+  [SDImageDataset] Loading 50 from larger cache: /mnt/workspace/Experiments/resources/sd_images/sd_s64_n500_seed1042.pt
+  [SDImageDataset] Loaded 50 images (subset of 500)
+  [SDImageDataset] Loading 500 from larger cache: /mnt/workspace/Experiments/resources/sd_images/sd_s64_n10000_seed42.pt
+  [SDImageDataset] Loaded 500 images (subset of 10000)
+  [SDImageDataset] Loading 50 from larger cache: /mnt/workspace/Experiments/resources/sd_images/sd_s64_n500_seed1042.pt
+  [SDImageDataset] Loaded 50 images (subset of 500)
+  [SDImageDataset] Loading 500 from larger cache: /mnt/workspace/Experiments/resources/sd_images/sd_s64_n10000_seed42.pt
+  [SDImageDataset] Loaded 500 images (subset of 10000)
+  [SDImageDataset] Loading 50 from larger cache: /mnt/workspace/Experiments/resources/sd_images/sd_s64_n500_seed1042.pt
+  [SDImageDataset] Loaded 50 images (subset of 500)
+
+============================================================
+  Training: PartialConv_block
+============================================================
+  Epoch   0/80 [1%] | Loss=0.2375 | PSNR=13.7 | ETA=1m16s
+  Epoch  10/80 [13%] | Loss=0.0373 | PSNR=24.3 | ETA=23s
+  Epoch  20/80 [26%] | Loss=0.0265 | PSNR=26.4 | ETA=17s
+  Epoch  30/80 [38%] | Loss=0.0244 | PSNR=26.2 | ETA=14s
+  Epoch  40/80 [51%] | Loss=0.0201 | PSNR=27.7 | ETA=11s
+  Epoch  50/80 [63%] | Loss=0.0168 | PSNR=28.3 | ETA=8s
+  Epoch  60/80 [76%] | Loss=0.0155 | PSNR=28.4 | ETA=5s
+  Epoch  70/80 [88%] | Loss=0.0148 | PSNR=28.4 | ETA=2s
+  Epoch  79/80 [100%] | Loss=0.0147 | PSNR=28.4 | ETA=0s
+  => PSNR=28.45  SSIM=0.9418  IoU=nan  Params=396.8K
+
+============================================================
+  Training: PartialConv_blur
+============================================================
+  Epoch   0/80 [1%] | Loss=0.2342 | PSNR=14.4 | ETA=50s
+  Epoch  10/80 [13%] | Loss=0.0471 | PSNR=22.8 | ETA=29s
+  Epoch  20/80 [26%] | Loss=0.0347 | PSNR=24.1 | ETA=24s
+  Epoch  30/80 [38%] | Loss=0.0320 | PSNR=24.9 | ETA=20s
+  Epoch  40/80 [51%] | Loss=0.0290 | PSNR=25.1 | ETA=16s
+  Epoch  50/80 [63%] | Loss=0.0256 | PSNR=25.3 | ETA=12s
+  Epoch  60/80 [76%] | Loss=0.0245 | PSNR=25.4 | ETA=8s
+  Epoch  70/80 [88%] | Loss=0.0240 | PSNR=25.5 | ETA=4s
+  Epoch  79/80 [100%] | Loss=0.0240 | PSNR=25.5 | ETA=0s
+  => PSNR=25.47  SSIM=0.9055  IoU=nan  Params=396.8K
+
+============================================================
+  Training: PartialConv_jpeg
+============================================================
+  Epoch   0/80 [1%] | Loss=0.2219 | PSNR=14.4 | ETA=1m12s
+  Epoch  10/80 [13%] | Loss=0.0363 | PSNR=25.0 | ETA=32s
+  Epoch  20/80 [26%] | Loss=0.0303 | PSNR=25.6 | ETA=27s
+  Epoch  30/80 [38%] | Loss=0.0293 | PSNR=25.9 | ETA=22s
+  Epoch  40/80 [51%] | Loss=0.0274 | PSNR=26.1 | ETA=17s
+  Epoch  50/80 [63%] | Loss=0.0252 | PSNR=26.5 | ETA=13s
+  Epoch  60/80 [76%] | Loss=0.0243 | PSNR=26.6 | ETA=8s
+  Epoch  70/80 [88%] | Loss=0.0238 | PSNR=26.7 | ETA=4s
+  Epoch  79/80 [100%] | Loss=0.0239 | PSNR=26.7 | ETA=0s
+  => PSNR=26.68  SSIM=0.9113  IoU=nan  Params=396.8K
+
+============================================================
+  Training: GatedConv_block
+============================================================
+  Epoch   0/80 [1%] | Loss=0.3309 | PSNR=10.5 | ETA=1m50s
+  Epoch  10/80 [13%] | Loss=0.0515 | PSNR=22.5 | ETA=30s
+  Epoch  20/80 [26%] | Loss=0.0397 | PSNR=23.9 | ETA=24s
+  Epoch  30/80 [38%] | Loss=0.0323 | PSNR=25.4 | ETA=19s
+  Epoch  40/80 [51%] | Loss=0.0288 | PSNR=25.8 | ETA=15s
+  Epoch  50/80 [63%] | Loss=0.0266 | PSNR=26.1 | ETA=11s
+  Epoch  60/80 [76%] | Loss=0.0252 | PSNR=26.3 | ETA=7s
+  Epoch  70/80 [88%] | Loss=0.0247 | PSNR=26.4 | ETA=3s
+  Epoch  79/80 [100%] | Loss=0.0245 | PSNR=26.4 | ETA=0s
+  => PSNR=26.38  SSIM=0.9057  IoU=nan  Params=468.5K
+
+============================================================
+  Training: GatedConv_blur
+============================================================
+  Epoch   0/80 [1%] | Loss=0.2809 | PSNR=11.8 | ETA=1m31s
+  Epoch  10/80 [13%] | Loss=0.0506 | PSNR=22.1 | ETA=38s
+  Epoch  20/80 [26%] | Loss=0.0421 | PSNR=23.3 | ETA=33s
+  Epoch  30/80 [38%] | Loss=0.0376 | PSNR=24.1 | ETA=27s
+  Epoch  40/80 [51%] | Loss=0.0339 | PSNR=24.5 | ETA=21s
+  Epoch  50/80 [63%] | Loss=0.0320 | PSNR=24.8 | ETA=16s
+  Epoch  60/80 [76%] | Loss=0.0310 | PSNR=24.9 | ETA=10s
+  Epoch  70/80 [88%] | Loss=0.0305 | PSNR=24.9 | ETA=5s
+  Epoch  79/80 [100%] | Loss=0.0304 | PSNR=24.9 | ETA=0s
+  => PSNR=24.94  SSIM=0.8852  IoU=nan  Params=468.5K
+
+============================================================
+  Training: GatedConv_jpeg
+============================================================
+  Epoch   0/80 [1%] | Loss=0.3442 | PSNR=10.3 | ETA=1m20s
+  Epoch  10/80 [13%] | Loss=0.0405 | PSNR=24.5 | ETA=41s
+  Epoch  20/80 [26%] | Loss=0.0375 | PSNR=24.9 | ETA=34s
+  Epoch  30/80 [38%] | Loss=0.0324 | PSNR=25.4 | ETA=28s
+  Epoch  40/80 [51%] | Loss=0.0299 | PSNR=25.7 | ETA=22s
+  Epoch  50/80 [63%] | Loss=0.0288 | PSNR=26.1 | ETA=16s
+  Epoch  60/80 [76%] | Loss=0.0282 | PSNR=26.1 | ETA=11s
+  Epoch  70/80 [88%] | Loss=0.0278 | PSNR=26.2 | ETA=5s
+  Epoch  79/80 [100%] | Loss=0.0278 | PSNR=26.2 | ETA=0s
+  => PSNR=26.20  SSIM=0.8962  IoU=nan  Params=468.5K
+
+============================================================
+  Training: LaMa_block
+============================================================
+MIOpen(HIP): Warning [IsEnoughWorkspace] [GetSolutionsFallback AI] Solver <GemmFwdRest>, workspace required: 884736, provided ptr: 0x7fb4fa2c0000 size: 724992
+MIOpen(HIP): Warning [IsEnoughWorkspace] [EvaluateInvokers] Solver <GemmFwdRest>, workspace required: 884736, provided ptr: 0x7fb4fa2c0000 size: 724992
+MIOpen(HIP): Warning [IsEnoughWorkspace] [GetSolutionsFallback AI] Solver <GemmFwdRest>, workspace required: 884736, provided ptr: 0x7fb4fa2c0000 size: 724992
+MIOpen(HIP): Warning [IsEnoughWorkspace] [EvaluateInvokers] Solver <GemmFwdRest>, workspace required: 884736, provided ptr: 0x7fb4fa2c0000 size: 724992
+  Epoch   0/80 [1%] | Loss=0.2396 | PSNR=13.5 | ETA=1m30s
+  Epoch  10/80 [13%] | Loss=0.0670 | PSNR=20.6 | ETA=40s
+  Epoch  20/80 [26%] | Loss=0.0527 | PSNR=22.9 | ETA=32s
+  Epoch  30/80 [38%] | Loss=0.0444 | PSNR=23.4 | ETA=26s
+  Epoch  40/80 [51%] | Loss=0.0343 | PSNR=25.1 | ETA=21s
+  Epoch  50/80 [63%] | Loss=0.0314 | PSNR=25.3 | ETA=15s
+  Epoch  60/80 [76%] | Loss=0.0284 | PSNR=25.6 | ETA=10s
+  Epoch  70/80 [88%] | Loss=0.0270 | PSNR=25.6 | ETA=5s
+  Epoch  79/80 [100%] | Loss=0.0267 | PSNR=25.6 | ETA=0s
+MIOpen(HIP): Warning [IsEnoughWorkspace] [GetSolutionsFallback AI] Solver <GemmFwdRest>, workspace required: 884736, provided ptr: 0x7fb509968000 size: 528384
+MIOpen(HIP): Warning [IsEnoughWorkspace] [EvaluateInvokers] Solver <GemmFwdRest>, workspace required: 884736, provided ptr: 0x7fb509968000 size: 528384
+MIOpen(HIP): Warning [IsEnoughWorkspace] [GetSolutionsFallback AI] Solver <GemmFwdRest>, workspace required: 884736, provided ptr: 0x7fb509968000 size: 528384
+MIOpen(HIP): Warning [IsEnoughWorkspace] [EvaluateInvokers] Solver <GemmFwdRest>, workspace required: 884736, provided ptr: 0x7fb509968000 size: 528384
+  => PSNR=25.64  SSIM=0.8927  IoU=nan  Params=774.5K
+
+============================================================
+  Training: LaMa_blur
+============================================================
+  Epoch   0/80 [1%] | Loss=0.2122 | PSNR=13.3 | ETA=1m49s
+  Epoch  10/80 [13%] | Loss=0.0589 | PSNR=17.9 | ETA=52s
+  Epoch  20/80 [26%] | Loss=0.0526 | PSNR=22.6 | ETA=42s
+  Epoch  30/80 [38%] | Loss=0.0454 | PSNR=23.0 | ETA=34s
+  Epoch  40/80 [51%] | Loss=0.0400 | PSNR=23.6 | ETA=28s
+  Epoch  50/80 [63%] | Loss=0.0336 | PSNR=24.0 | ETA=20s
+  Epoch  60/80 [76%] | Loss=0.0306 | PSNR=23.9 | ETA=13s
+  Epoch  70/80 [88%] | Loss=0.0294 | PSNR=23.8 | ETA=6s
+  Epoch  79/80 [100%] | Loss=0.0292 | PSNR=23.8 | ETA=0s
+  => PSNR=24.02  SSIM=0.8626  IoU=nan  Params=774.5K
+
+============================================================
+  Training: LaMa_jpeg
+============================================================
+  Epoch   0/80 [1%] | Loss=0.3171 | PSNR=10.8 | ETA=1m43s
+  Epoch  10/80 [13%] | Loss=0.0608 | PSNR=20.0 | ETA=55s
+  Epoch  20/80 [26%] | Loss=0.0443 | PSNR=23.8 | ETA=45s
+  Epoch  30/80 [38%] | Loss=0.0410 | PSNR=22.9 | ETA=35s
+  Epoch  40/80 [51%] | Loss=0.0354 | PSNR=25.2 | ETA=28s
+  Epoch  50/80 [63%] | Loss=0.0336 | PSNR=25.5 | ETA=21s
+  Epoch  60/80 [76%] | Loss=0.0314 | PSNR=25.7 | ETA=13s
+  Epoch  70/80 [88%] | Loss=0.0308 | PSNR=25.7 | ETA=6s
+  Epoch  79/80 [100%] | Loss=0.0307 | PSNR=25.7 | ETA=0s
+  => PSNR=25.73  SSIM=0.8853  IoU=nan  Params=774.5K
+
+============================================================
+  Training: PSR-Net_block
+============================================================
+  Epoch   0/80 [1%] | Loss=0.5587 | λ_s=0.0000 | PSNR=12.4 | ETA=33s
+  Epoch  10/80 [13%] | Loss=0.1561 | λ_s=0.0075 | PSNR=12.7 | ETA=16s
+  Epoch  20/80 [26%] | Loss=0.0838 | λ_s=0.0150 | PSNR=15.3 | ETA=14s
+  Epoch  30/80 [38%] | Loss=0.0509 | λ_s=0.0225 | PSNR=19.4 | ETA=11s
+  Epoch  40/80 [51%] | Loss=0.0382 | λ_s=0.0300 | PSNR=20.0 | ETA=9s
+  Epoch  50/80 [63%] | Loss=0.0348 | λ_s=0.0300 | PSNR=20.4 | ETA=7s
+  Epoch  60/80 [76%] | Loss=0.0318 | λ_s=0.0300 | PSNR=21.0 | ETA=4s
+  Epoch  70/80 [88%] | Loss=0.0307 | λ_s=0.0300 | PSNR=21.1 | ETA=2s
+  Epoch  79/80 [100%] | Loss=0.0302 | λ_s=0.0300 | PSNR=21.1 | ETA=0s
+  => PSNR=21.10  SSIM=0.8807  IoU=0.9341  Params=271.6K
+
+============================================================
+  Training: PSR-Net_blur
+============================================================
+  Epoch   0/80 [1%] | Loss=0.6711 | λ_s=0.0000 | PSNR=22.4 | ETA=36s
+  Epoch  10/80 [13%] | Loss=0.3738 | λ_s=0.0050 | PSNR=22.5 | ETA=26s
+  Epoch  20/80 [26%] | Loss=0.2551 | λ_s=0.0100 | PSNR=22.5 | ETA=21s
+  Epoch  30/80 [38%] | Loss=0.2036 | λ_s=0.0150 | PSNR=22.5 | ETA=18s
+  Epoch  40/80 [51%] | Loss=0.1837 | λ_s=0.0200 | PSNR=22.5 | ETA=15s
+  Epoch  50/80 [63%] | Loss=0.1442 | λ_s=0.0200 | PSNR=22.6 | ETA=11s
+  Epoch  60/80 [76%] | Loss=0.1265 | λ_s=0.0200 | PSNR=22.6 | ETA=7s
+  Epoch  70/80 [88%] | Loss=0.1182 | λ_s=0.0200 | PSNR=22.6 | ETA=3s
+  Epoch  79/80 [100%] | Loss=0.1164 | λ_s=0.0200 | PSNR=22.6 | ETA=0s
+  => PSNR=22.57  SSIM=0.8603  IoU=0.8372  Params=271.6K
+
+============================================================
+  Training: PSR-Net_jpeg
+============================================================
+  Epoch   0/80 [1%] | Loss=0.7152 | λ_s=0.0000 | PSNR=25.4 | ETA=46s
+  Epoch  10/80 [13%] | Loss=0.5677 | λ_s=0.0075 | PSNR=25.5 | ETA=30s
+  Epoch  20/80 [26%] | Loss=0.4644 | λ_s=0.0150 | PSNR=25.5 | ETA=25s
+  Epoch  30/80 [38%] | Loss=0.3894 | λ_s=0.0225 | PSNR=25.5 | ETA=21s
+  Epoch  40/80 [51%] | Loss=0.3546 | λ_s=0.0300 | PSNR=25.5 | ETA=16s
+  Epoch  50/80 [63%] | Loss=0.3072 | λ_s=0.0300 | PSNR=25.5 | ETA=12s
+  Epoch  60/80 [76%] | Loss=0.2788 | λ_s=0.0300 | PSNR=25.5 | ETA=8s
+  Epoch  70/80 [88%] | Loss=0.2618 | λ_s=0.0300 | PSNR=25.5 | ETA=4s
+  Epoch  79/80 [100%] | Loss=0.2562 | λ_s=0.0300 | PSNR=25.5 | ETA=0s
+  => PSNR=25.53  SSIM=0.8845  IoU=0.6226  Params=271.6K
+
+Results saved to /mnt/workspace/Experiments/A7/outputs/results.json
+Bar chart saved to /mnt/workspace/Experiments/A7/outputs/bar_comparison.png
+Radar chart saved to /mnt/workspace/Experiments/A7/outputs/method_radar.png
+Visual grid (block) saved to /mnt/workspace/Experiments/A7/outputs/visual_grid_block.png
+Visual grid (blur) saved to /mnt/workspace/Experiments/A7/outputs/visual_grid_blur.png
+Visual grid (jpeg) saved to /mnt/workspace/Experiments/A7/outputs/visual_grid_jpeg.png
+
+============================================================================================
+  METHOD COMPARISON SUMMARY  (mean across block/blur/jpeg)
+============================================================================================
+Method            PSNR    SSIM     IoU  M.Contr  L1Impr%  Time_ms   ParamK
+--------------------------------------------------------------------------------------------
+PartialConv      26.87  0.9196     nan      nan     24.9     0.71    396.8
+GatedConv        25.84  0.8957     nan      nan     10.4     1.25    468.5
+LaMa             25.13  0.8802     nan      nan     -2.1     1.26    774.5
+PSR-Net          23.07  0.8752  0.7980   104.63     22.6     0.57    271.6
+============================================================================================
+
+A7 experiment complete!

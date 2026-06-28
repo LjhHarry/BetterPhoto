@@ -1,0 +1,72 @@
+{
+  "experiment": "B3_Zero_Trace_Local_Editing",
+  "Pixel Fidelity Rate": "99.7180% (target: 100%)",
+  "fidelity_psr_net": {
+    "threshold_0.0001": 99.71797667290643,
+    "threshold_1e-05": 98.54503939275503,
+    "threshold_1e-06": 95.19655236253676
+  },
+  "fidelity_standard_unet": {
+    "threshold_0.0001": 0.0,
+    "threshold_1e-05": 0.0,
+    "threshold_1e-06": 0.0
+  },
+  "fidelity_sd_inpainting_simulated": {
+    "fidelity_threshold_0.0001": 85.0,
+    "fidelity_threshold_1e-05": 50.0,
+    "fidelity_threshold_1e-06": 15.0
+  },
+  "fidelity_manual_mask": {
+    "fidelity_threshold_0.0001": 100.0,
+    "fidelity_threshold_1e-05": 100.0,
+    "fidelity_threshold_1e-06": 100.0
+  },
+  "psr_net_metrics": {
+    "full_psnr_mean": 36.87642135181258,
+    "full_psnr_std": 11.016016777658548,
+    "full_ssim_mean": 0.969381821155548,
+    "full_ssim_std": 0.024841827231048545,
+    "edit_region_psnr_mean": 36.95105222319907,
+    "edit_region_ssim_mean": 0.9816490352153778,
+    "mask_iou_mean": 0.0,
+    "mask_iou_std": 0.0,
+    "mask_contrast_ratio_mean": 385724.7543865564
+  },
+  "fidelity_comparison": {
+    "PSR-Net (Ours)": {
+      "fidelity_threshold_0.0001": 99.71797667290643,
+      "fidelity_threshold_1e-05": 98.54503939275503,
+      "fidelity_threshold_1e-06": 95.19655236253676
+    },
+    "Standard UNet": {
+      "fidelity_threshold_0.0001": 0.0,
+      "fidelity_threshold_1e-05": 0.0,
+      "fidelity_threshold_1e-06": 0.0
+    },
+    "SD Inpainting (Sim.)": {
+      "fidelity_threshold_0.0001": 85.0,
+      "fidelity_threshold_1e-05": 50.0,
+      "fidelity_threshold_1e-06": 15.0
+    },
+    "Manual Mask (Upper Bound)": {
+      "fidelity_threshold_0.0001": 100.0,
+      "fidelity_threshold_1e-05": 100.0,
+      "fidelity_threshold_1e-06": 100.0
+    }
+  },
+  "config": {
+    "image_size": 128,
+    "batch_size": 4,
+    "epochs": 100,
+    "lambda_sparse": 0.1,
+    "lr": 0.001,
+    "train_samples": 200,
+    "test_samples": 30,
+    "device": "cuda"
+  },
+  "output_files": [
+    "pixel_fidelity_analysis.png",
+    "fidelity_bar_chart.png",
+    "boundary_continuity.png"
+  ]
+}

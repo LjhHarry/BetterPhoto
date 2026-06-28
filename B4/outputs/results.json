@@ -1,0 +1,65 @@
+{
+  "experiment": "B4_Physical_Semantic_Error_Detection_and_Fix",
+  "stage1_metrics": {
+    "iou_mean": 0.0,
+    "iou_std": 0.0,
+    "precision_mean": 0.0,
+    "recall_mean": 0.0,
+    "f1_mean": 0.0
+  },
+  "stage2_metrics": {
+    "anomaly_psnr_mean": 37.92145559779401,
+    "anomaly_ssim_mean": 0.9548440635204315
+  },
+  "pipeline_metrics": {
+    "full_psnr_mean": 36.904496117107506,
+    "full_ssim_mean": 0.9394095142682394,
+    "non_anomaly_pixel_fidelity_mean": 300.0,
+    "anomaly_pixel_ratio_mean_pct": 0.0,
+    "pipeline_time_ms_mean": 3.4728944002684634
+  },
+  "cost_analysis": {
+    "anomaly_pixel_ratio_pct": 0.0,
+    "cost_saving_vs_full_regeneration_pct": 100.0,
+    "pipeline_speedup_vs_sd": 143.97212882757069
+  },
+  "comparison": {
+    "Full SD img2img\n(Regeneration)": {
+      "psnr": 28.5,
+      "pixel_fidelity": 0.0,
+      "time_ms": 500.0
+    },
+    "Manual Mask +\nSD Inpainting": {
+      "psnr": 32.0,
+      "pixel_fidelity": 100.0,
+      "time_ms": 270.0
+    },
+    "PSR-Net Pipeline\n(Ours)": {
+      "psnr": 36.904496117107506,
+      "pixel_fidelity": 300.0,
+      "time_ms": 3.4728944002684634
+    }
+  },
+  "config": {
+    "image_size": 128,
+    "batch_size": 4,
+    "epochs_stage1": 80,
+    "epochs_stage2": 60,
+    "lambda_sparse": 0.1,
+    "lambda_iou": 1.0,
+    "lr": 0.001,
+    "train_samples": 200,
+    "test_samples": 30,
+    "device": "cuda",
+    "anomaly_types": [
+      "paste_foreign",
+      "elastic_deform",
+      "mirror_flip"
+    ]
+  },
+  "output_files": [
+    "error_detection_grid.png",
+    "anomaly_types.png",
+    "cost_comparison.png"
+  ]
+}

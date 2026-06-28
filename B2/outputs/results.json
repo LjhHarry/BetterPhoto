@@ -1,0 +1,122 @@
+{
+  "experiment": "B2_LowCost_HighResolution_Enhancement",
+  "timestamp": "2026-06-16T20:57:45.789827",
+  "config": {
+    "mode": "full",
+    "image_size": 512,
+    "low_size": 128,
+    "downscale_factor": 4,
+    "batch_size": 2,
+    "epochs": 100,
+    "lambda_sparse": 0.05,
+    "train_samples": 500,
+    "model_params": 5835812
+  },
+  "training": {
+    "final_loss": 0.0018765884274616837,
+    "final_l1": 0.0018765884274616837,
+    "final_mask_mean": 1.4969002583913434e-40
+  },
+  "validation_metrics": {
+    "psnr": 58.84097637514791,
+    "ssim": 0.9994528555870056,
+    "lpips": 0.0009842460307603082,
+    "epi": 0.9993413400650024,
+    "mask_mean": 0.0004518285521771759,
+    "hf_energy": 0.0012666469921047488
+  },
+  "baseline_comparison": {
+    "Bicubic Interpolation": {
+      "psnr": 52.876860151993846,
+      "ssim": 0.999446451663971,
+      "lpips": 0.0019627338430533805,
+      "epi": 0.9993045330047607,
+      "hf_energy": 0.001246250350959599,
+      "inference_ms": 0.5,
+      "mask_ratio": 1.0
+    },
+    "Lanczos Interpolation": {
+      "psnr": 52.876860151993846,
+      "ssim": 0.999446451663971,
+      "lpips": 0.0019627338430533805,
+      "epi": 0.9993045330047607,
+      "hf_energy": 0.001246250350959599,
+      "inference_ms": 0.5,
+      "mask_ratio": 1.0
+    },
+    "Simple CNN Super-Res": {
+      "psnr": 52.876860151993846,
+      "ssim": 0.999446451663971,
+      "lpips": 0.0019627338430533805,
+      "epi": 0.9993045330047607,
+      "hf_energy": 0.001246250350959599,
+      "inference_ms": 0.5,
+      "mask_ratio": 1.0
+    },
+    "SD Upscale Proxy": {
+      "psnr": 52.876860151993846,
+      "ssim": 0.999446451663971,
+      "lpips": 0.0019627338430533805,
+      "epi": 0.9993045330047607,
+      "hf_energy": 0.001246250350959599,
+      "inference_ms": 0.5,
+      "mask_ratio": 1.0
+    },
+    "PSR-Net Selective (Ours)": {
+      "psnr": 58.84230477576637,
+      "ssim": 0.9994555711746216,
+      "lpips": 0.0009842064852515857,
+      "epi": 0.9993384480476379,
+      "hf_energy": 0.001258951301376025,
+      "inference_ms": 9.308004379272461,
+      "mask_ratio": 0.00045182876056060195
+    },
+    "SD Img2Img Upscale": {
+      "psnr": 32.926152092492586,
+      "ssim": 0.9865409135818481,
+      "lpips": 0.018634690592686336,
+      "epi": 0.9727377891540527,
+      "hf_energy": 0.0012150657130405307,
+      "inference_ms": 2000.0,
+      "mask_ratio": 1.0
+    }
+  },
+  "cost_analysis": {
+    "Full High-Res Gen": {
+      "quality": 52.876860151993846,
+      "cost": 1.0,
+      "mask_ratio": 1.0,
+      "description": "Full resolution regeneration"
+    },
+    "Bicubic (cheap)": {
+      "quality": 52.876860151993846,
+      "cost": 0.05,
+      "mask_ratio": 1.0,
+      "description": "Bicubic interpolation (lower bound)"
+    },
+    "Lanczos": {
+      "quality": 52.876860151993846,
+      "cost": 0.060000000000000005,
+      "mask_ratio": 1.0,
+      "description": "Lanczos interpolation"
+    },
+    "PSR-Net Selective (Ours)": {
+      "quality": 58.84230477576637,
+      "cost": 0.050406645884504546,
+      "mask_ratio": 0.00045182876056060195,
+      "description": "Cheap upscale + PSR-Net (0.0% pixels)"
+    }
+  },
+  "cost_summary": {
+    "psrnet_mask_activation_ratio": 0.00045182876056060195,
+    "cost_saving_pct": 99.95933541154955,
+    "psrnet_inference_ms_per_image": 9.308004379272461
+  },
+  "files": {
+    "best_model": "/mnt/workspace/Experiments/B2/outputs/best_model.pt",
+    "training_curves": "/mnt/workspace/Experiments/B2/outputs/training_curves.png",
+    "comparison_grid": "/mnt/workspace/Experiments/B2/outputs/enhancement_comparison.png",
+    "mask_activation": "/mnt/workspace/Experiments/B2/outputs/mask_activation_map.png",
+    "cost_analysis": "/mnt/workspace/Experiments/B2/outputs/cost_analysis.png"
+  }
+}

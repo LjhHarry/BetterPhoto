@@ -1,0 +1,16 @@
+Downloading Model from https://www.modelscope.cn to directory: /mnt/workspace/.cache/modelscope/models/AI-ModelScope/stable-diffusion-v1-5
+Traceback (most recent call last):
+  File "/tmp/download_sd.py", line 6, in <module>
+    p = snapshot_download("AI-ModelScope/stable-diffusion-v1-5", revision="v1-5-pruned-emaonly")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/modelscope/hub/snapshot_download.py", line 145, in snapshot_download
+    return _snapshot_download(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/modelscope/hub/snapshot_download.py", line 337, in _snapshot_download
+    revision_detail = _api.get_valid_revision_detail(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/modelscope/hub/api.py", line 1233, in get_valid_revision_detail
+    raise NotExistError('The model: %s has no revision: %s valid are: %s!' %
+modelscope.hub.errors.NotExistError: The model: AI-ModelScope/stable-diffusion-v1-5 has no revision: v1-5-pruned-emaonly valid are: [v1.0.9,v1.0.8,v1.0.7,v1.0.6,v1.0.5,v1.0.4,v1.0.3,v1.0.2,v1.0.1,v1.0.0]!
+Trying alternative: AI-ModelScope/stable-diffusion-v1-5 (master)
+Downloading Model from https://www.modelscope.cn to directory: /mnt/workspace/.cache/modelscope/models/AI-ModelScope/stable-diffusion-v1-5

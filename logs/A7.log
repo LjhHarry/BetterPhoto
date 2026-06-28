@@ -1,0 +1,156 @@
+Device: cuda
+
+  [SD] Loading Stable Diffusion v1.5 from: /mnt/workspace/Experiments/stable-diffusion-v1-5
+[aiter] import [module_aiter_enum] under /usr/local/lib/python3.12/dist-packages/aiter/jit/module_aiter_enum.so
+  [SD] Using local cache (local_files_only=True)
+Loading pipeline components...:   0%|                                                                                                    | 0/6 [00:00<?, ?it/s]Loading pipeline components...:   0%|                                                                                                    | 0/6 [00:00<?, ?it/s]
+  [SD] Failed to load pipeline: You seem to have cloned a repository without having git-lfs installed. Please install git-lfs and run `git lfs install` followed by `git lfs pull` in the folder you cloned.
+  [SD] Falling back to synthetic data
+  [SDImageDataset] SD unavailable, fallback to random noise
+
+  [SD] Loading Stable Diffusion v1.5 from: /mnt/workspace/Experiments/stable-diffusion-v1-5
+  [SD] Using local cache (local_files_only=True)
+Loading pipeline components...:   0%|                                                                                                    | 0/6 [00:00<?, ?it/s]Loading pipeline components...:   0%|                                                                                                    | 0/6 [00:00<?, ?it/s]
+  [SD] Failed to load pipeline: You seem to have cloned a repository without having git-lfs installed. Please install git-lfs and run `git lfs install` followed by `git lfs pull` in the folder you cloned.
+  [SD] Falling back to synthetic data
+  [SDImageDataset] SD unavailable, fallback to random noise
+
+  [SD] Loading Stable Diffusion v1.5 from: /mnt/workspace/Experiments/stable-diffusion-v1-5
+  [SD] Using local cache (local_files_only=True)
+Loading pipeline components...:   0%|                                                                                                    | 0/6 [00:00<?, ?it/s]Loading pipeline components...:   0%|                                                                                                    | 0/6 [00:00<?, ?it/s]
+  [SD] Failed to load pipeline: You seem to have cloned a repository without having git-lfs installed. Please install git-lfs and run `git lfs install` followed by `git lfs pull` in the folder you cloned.
+  [SD] Falling back to synthetic data
+  [SDImageDataset] SD unavailable, fallback to random noise
+
+  [SD] Loading Stable Diffusion v1.5 from: /mnt/workspace/Experiments/stable-diffusion-v1-5
+  [SD] Using local cache (local_files_only=True)
+Loading pipeline components...:   0%|                                                                                                    | 0/6 [00:00<?, ?it/s]Loading pipeline components...:   0%|                                                                                                    | 0/6 [00:00<?, ?it/s]
+  [SD] Failed to load pipeline: You seem to have cloned a repository without having git-lfs installed. Please install git-lfs and run `git lfs install` followed by `git lfs pull` in the folder you cloned.
+  [SD] Falling back to synthetic data
+  [SDImageDataset] SD unavailable, fallback to random noise
+
+  [SD] Loading Stable Diffusion v1.5 from: /mnt/workspace/Experiments/stable-diffusion-v1-5
+  [SD] Using local cache (local_files_only=True)
+Loading pipeline components...:   0%|                                                                                                    | 0/6 [00:00<?, ?it/s]Loading pipeline components...:   0%|                                                                                                    | 0/6 [00:00<?, ?it/s]
+  [SD] Failed to load pipeline: You seem to have cloned a repository without having git-lfs installed. Please install git-lfs and run `git lfs install` followed by `git lfs pull` in the folder you cloned.
+  [SD] Falling back to synthetic data
+  [SDImageDataset] SD unavailable, fallback to random noise
+
+  [SD] Loading Stable Diffusion v1.5 from: /mnt/workspace/Experiments/stable-diffusion-v1-5
+  [SD] Using local cache (local_files_only=True)
+Loading pipeline components...:   0%|                                                                                                    | 0/6 [00:00<?, ?it/s]Loading pipeline components...:   0%|                                                                                                    | 0/6 [00:00<?, ?it/s]
+  [SD] Failed to load pipeline: You seem to have cloned a repository without having git-lfs installed. Please install git-lfs and run `git lfs install` followed by `git lfs pull` in the folder you cloned.
+  [SD] Falling back to synthetic data
+  [SDImageDataset] SD unavailable, fallback to random noise
+
+============================================================
+  Training: PartialConv_block
+============================================================
+  [Checkpoint] 恢复自: checkpoint_epoch_0099.pt
+  [Skip] Already completed 80 epochs, loading best model
+  => PSNR=30.92  SSIM=0.9261  IoU=nan  Params=396.8K
+
+============================================================
+  Training: PartialConv_blur
+============================================================
+  [Checkpoint] 恢复自: checkpoint_epoch_0099.pt
+  [Skip] Already completed 80 epochs, loading best model
+  => PSNR=32.99  SSIM=0.8902  IoU=nan  Params=396.8K
+
+============================================================
+  Training: PartialConv_jpeg
+============================================================
+  [Checkpoint] 恢复自: checkpoint_epoch_0099.pt
+  [Skip] Already completed 80 epochs, loading best model
+  => PSNR=31.22  SSIM=0.8590  IoU=nan  Params=396.8K
+
+============================================================
+  Training: GatedConv_block
+============================================================
+  [Checkpoint] 恢复自: checkpoint_epoch_0099.pt
+  [Skip] Already completed 80 epochs, loading best model
+  => PSNR=28.64  SSIM=0.7583  IoU=nan  Params=468.5K
+
+============================================================
+  Training: GatedConv_blur
+============================================================
+  [Checkpoint] 恢复自: checkpoint_epoch_0099.pt
+  [Skip] Already completed 80 epochs, loading best model
+  => PSNR=28.26  SSIM=0.6920  IoU=nan  Params=468.5K
+
+============================================================
+  Training: GatedConv_jpeg
+============================================================
+  [Checkpoint] 恢复自: checkpoint_epoch_0099.pt
+  [Skip] Already completed 80 epochs, loading best model
+  => PSNR=28.35  SSIM=0.7306  IoU=nan  Params=468.5K
+
+============================================================
+  Training: LaMa_block
+============================================================
+  [Checkpoint] 恢复自: checkpoint_epoch_0099.pt
+  [Skip] Already completed 80 epochs, loading best model
+MIOpen(HIP): Warning [IsEnoughWorkspace] [GetSolutionsFallback AI] Solver <GemmFwdRest>, workspace required: 884736, provided ptr: 0x7feebdcc0000 size: 724992
+MIOpen(HIP): Warning [IsEnoughWorkspace] [EvaluateInvokers] Solver <GemmFwdRest>, workspace required: 884736, provided ptr: 0x7feebdcc0000 size: 724992
+MIOpen(HIP): Warning [IsEnoughWorkspace] [GetSolutionsFallback AI] Solver <GemmFwdRest>, workspace required: 884736, provided ptr: 0x7feebdcc0000 size: 724992
+MIOpen(HIP): Warning [IsEnoughWorkspace] [EvaluateInvokers] Solver <GemmFwdRest>, workspace required: 884736, provided ptr: 0x7feebdcc0000 size: 724992
+MIOpen(HIP): Warning [IsEnoughWorkspace] [GetSolutionsFallback AI] Solver <GemmFwdRest>, workspace required: 884736, provided ptr: 0x7feea5860000 size: 528384
+MIOpen(HIP): Warning [IsEnoughWorkspace] [EvaluateInvokers] Solver <GemmFwdRest>, workspace required: 884736, provided ptr: 0x7feea5860000 size: 528384
+MIOpen(HIP): Warning [IsEnoughWorkspace] [GetSolutionsFallback AI] Solver <GemmFwdRest>, workspace required: 884736, provided ptr: 0x7feea5878000 size: 528384
+MIOpen(HIP): Warning [IsEnoughWorkspace] [EvaluateInvokers] Solver <GemmFwdRest>, workspace required: 884736, provided ptr: 0x7feea5878000 size: 528384
+  => PSNR=26.00  SSIM=0.6609  IoU=nan  Params=774.5K
+
+============================================================
+  Training: LaMa_blur
+============================================================
+  [Checkpoint] 恢复自: checkpoint_epoch_0099.pt
+  [Skip] Already completed 80 epochs, loading best model
+  => PSNR=28.08  SSIM=0.6783  IoU=nan  Params=774.5K
+
+============================================================
+  Training: LaMa_jpeg
+============================================================
+  [Checkpoint] 恢复自: checkpoint_epoch_0099.pt
+  [Skip] Already completed 80 epochs, loading best model
+  => PSNR=28.01  SSIM=0.6779  IoU=nan  Params=774.5K
+
+============================================================
+  Training: PSR-Net_block
+============================================================
+  [Checkpoint] 恢复自: checkpoint_epoch_0099.pt
+  [Skip] Already completed 80 epochs, loading best model
+  => PSNR=22.59  SSIM=0.9065  IoU=0.7358  Params=271.6K
+
+============================================================
+  Training: PSR-Net_blur
+============================================================
+  [Checkpoint] 恢复自: checkpoint_epoch_0099.pt
+  [Skip] Already completed 80 epochs, loading best model
+  => PSNR=33.47  SSIM=0.8944  IoU=0.0000  Params=271.6K
+
+============================================================
+  Training: PSR-Net_jpeg
+============================================================
+  [Checkpoint] 恢复自: checkpoint_epoch_0099.pt
+  [Skip] Already completed 80 epochs, loading best model
+  => PSNR=32.19  SSIM=0.8792  IoU=0.0000  Params=271.6K
+
+Results saved to /mnt/workspace/Experiments/A7/outputs/results.json
+Bar chart saved to /mnt/workspace/Experiments/A7/outputs/bar_comparison.png
+Radar chart saved to /mnt/workspace/Experiments/A7/outputs/method_radar.png
+Visual grid (block) saved to /mnt/workspace/Experiments/A7/outputs/visual_grid_block.png
+Visual grid (blur) saved to /mnt/workspace/Experiments/A7/outputs/visual_grid_blur.png
+Visual grid (jpeg) saved to /mnt/workspace/Experiments/A7/outputs/visual_grid_jpeg.png
+
+============================================================================================
+  METHOD COMPARISON SUMMARY  (mean across block/blur/jpeg)
+============================================================================================
+Method            PSNR    SSIM     IoU  M.Contr  L1Impr%  Time_ms   ParamK
+--------------------------------------------------------------------------------------------
+PartialConv      31.71  0.8918     nan      nan     -5.5     2.19    396.8
+GatedConv        28.41  0.7270     nan      nan   -108.1     4.28    468.5
+LaMa             27.36  0.6724     nan      nan   -120.3     4.63    774.5
+PSR-Net          29.42  0.8934  0.2453 666957.71     25.3     1.25    271.6
+============================================================================================
+
+A7 experiment complete!

@@ -1,0 +1,203 @@
+Device: cuda
+
+==================================================
+  Training with seed=42
+==================================================
+
+  [SD] Loading Stable Diffusion v1.5 from: /mnt/workspace/Experiments/stable-diffusion-v1-5
+[aiter] import [module_aiter_enum] under /usr/local/lib/python3.12/dist-packages/aiter/jit/module_aiter_enum.so
+  [SD] Using local cache (local_files_only=True)
+Loading pipeline components...:   0%|                                                                                                    | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  17%|███████████████▎                                                                            | 1/6 [00:00<00:00,  7.47it/s]
+  [SD] Failed to load pipeline: You seem to have cloned a repository without having git-lfs installed. Please install git-lfs and run `git lfs install` followed by `git lfs pull` in the folder you cloned.
+  [SD] Falling back to synthetic data
+  [SDImageDataset] SD unavailable, fallback to random noise
+
+  [SD] Loading Stable Diffusion v1.5 from: /mnt/workspace/Experiments/stable-diffusion-v1-5
+  [SD] Using local cache (local_files_only=True)
+Loading pipeline components...:   0%|                                                                                                    | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  17%|███████████████▎                                                                            | 1/6 [00:00<00:00,  8.00it/s]
+  [SD] Failed to load pipeline: You seem to have cloned a repository without having git-lfs installed. Please install git-lfs and run `git lfs install` followed by `git lfs pull` in the folder you cloned.
+  [SD] Falling back to synthetic data
+  [SDImageDataset] SD unavailable, fallback to random noise
+  [Seed 42] Epoch   0/80 [1%] | PSNR=14.7 | IoU=0.0697 | ETA=0s
+  [Seed 42] Epoch   5/80 [7%] | PSNR=21.6 | IoU=0.7496 | ETA=1m1s
+  [Seed 42] Epoch  10/80 [13%] | PSNR=23.2 | IoU=0.7527 | ETA=49s
+  [Seed 42] Epoch  15/80 [20%] | PSNR=23.3 | IoU=0.7535 | ETA=43s
+  [Seed 42] Epoch  20/80 [26%] | PSNR=23.3 | IoU=0.7543 | ETA=38s
+  [Seed 42] Epoch  25/80 [32%] | PSNR=23.4 | IoU=0.7552 | ETA=34s
+  [Seed 42] Epoch  30/80 [38%] | PSNR=23.4 | IoU=0.7554 | ETA=30s
+  [Seed 42] Epoch  35/80 [45%] | PSNR=23.4 | IoU=0.7561 | ETA=27s
+  [Seed 42] Epoch  40/80 [51%] | PSNR=23.4 | IoU=0.7566 | ETA=23s
+  [Seed 42] Epoch  45/80 [57%] | PSNR=23.3 | IoU=0.7546 | ETA=20s
+  [Seed 42] Epoch  50/80 [63%] | PSNR=23.4 | IoU=0.7443 | ETA=17s
+  [Seed 42] Epoch  55/80 [70%] | PSNR=23.4 | IoU=0.6714 | ETA=14s
+  [Seed 42] Epoch  60/80 [76%] | PSNR=23.4 | IoU=0.6304 | ETA=11s
+  [Seed 42] Epoch  65/80 [82%] | PSNR=23.4 | IoU=0.5582 | ETA=8s
+  [Seed 42] Epoch  70/80 [88%] | PSNR=23.4 | IoU=0.5418 | ETA=5s
+  [Seed 42] Epoch  75/80 [95%] | PSNR=23.4 | IoU=0.5307 | ETA=2s
+  [Seed 42] Epoch  79/80 [100%] | PSNR=23.4 | IoU=0.5295 | ETA=0s
+  Final: PSNR=23.41  SSIM=0.9303  IoU=0.5295  Mask Mean=0.0051
+
+==================================================
+  Training with seed=123
+==================================================
+
+  [SD] Loading Stable Diffusion v1.5 from: /mnt/workspace/Experiments/stable-diffusion-v1-5
+  [SD] Using local cache (local_files_only=True)
+Loading pipeline components...:   0%|                                                                                                    | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  17%|███████████████▎                                                                            | 1/6 [00:00<00:00, 11.21it/s]
+  [SD] Failed to load pipeline: You seem to have cloned a repository without having git-lfs installed. Please install git-lfs and run `git lfs install` followed by `git lfs pull` in the folder you cloned.
+  [SD] Falling back to synthetic data
+  [SDImageDataset] SD unavailable, fallback to random noise
+
+  [SD] Loading Stable Diffusion v1.5 from: /mnt/workspace/Experiments/stable-diffusion-v1-5
+  [SD] Using local cache (local_files_only=True)
+Loading pipeline components...:   0%|                                                                                                    | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  17%|███████████████▎                                                                            | 1/6 [00:00<00:00,  9.67it/s]
+  [SD] Failed to load pipeline: You seem to have cloned a repository without having git-lfs installed. Please install git-lfs and run `git lfs install` followed by `git lfs pull` in the folder you cloned.
+  [SD] Falling back to synthetic data
+  [SDImageDataset] SD unavailable, fallback to random noise
+  [Seed 123] Epoch   0/80 [1%] | PSNR=12.5 | IoU=0.0928 | ETA=0s
+  [Seed 123] Epoch   5/80 [7%] | PSNR=23.3 | IoU=0.7704 | ETA=47s
+  [Seed 123] Epoch  10/80 [13%] | PSNR=24.2 | IoU=0.7860 | ETA=42s
+  [Seed 123] Epoch  15/80 [20%] | PSNR=24.5 | IoU=0.7878 | ETA=38s
+  [Seed 123] Epoch  20/80 [26%] | PSNR=24.6 | IoU=0.7928 | ETA=34s
+  [Seed 123] Epoch  25/80 [32%] | PSNR=24.2 | IoU=0.7936 | ETA=31s
+  [Seed 123] Epoch  30/80 [38%] | PSNR=24.7 | IoU=0.7937 | ETA=28s
+  [Seed 123] Epoch  35/80 [45%] | PSNR=24.4 | IoU=0.7935 | ETA=25s
+  [Seed 123] Epoch  40/80 [51%] | PSNR=24.4 | IoU=0.7937 | ETA=22s
+  [Seed 123] Epoch  45/80 [57%] | PSNR=24.5 | IoU=0.7934 | ETA=19s
+  [Seed 123] Epoch  50/80 [63%] | PSNR=24.5 | IoU=0.7904 | ETA=16s
+  [Seed 123] Epoch  55/80 [70%] | PSNR=24.7 | IoU=0.7861 | ETA=13s
+  [Seed 123] Epoch  60/80 [76%] | PSNR=24.6 | IoU=0.7652 | ETA=10s
+  [Seed 123] Epoch  65/80 [82%] | PSNR=24.7 | IoU=0.7241 | ETA=8s
+  [Seed 123] Epoch  70/80 [88%] | PSNR=24.8 | IoU=0.6684 | ETA=5s
+  [Seed 123] Epoch  75/80 [95%] | PSNR=24.8 | IoU=0.6559 | ETA=2s
+  [Seed 123] Epoch  79/80 [100%] | PSNR=24.8 | IoU=0.6524 | ETA=0s
+  Final: PSNR=24.78  SSIM=0.9214  IoU=0.6524  Mask Mean=0.0087
+
+==================================================
+  Training with seed=456
+==================================================
+
+  [SD] Loading Stable Diffusion v1.5 from: /mnt/workspace/Experiments/stable-diffusion-v1-5
+  [SD] Using local cache (local_files_only=True)
+Loading pipeline components...:   0%|                                                                                                    | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  17%|███████████████▎                                                                            | 1/6 [00:00<00:00, 10.76it/s]
+  [SD] Failed to load pipeline: You seem to have cloned a repository without having git-lfs installed. Please install git-lfs and run `git lfs install` followed by `git lfs pull` in the folder you cloned.
+  [SD] Falling back to synthetic data
+  [SDImageDataset] SD unavailable, fallback to random noise
+
+  [SD] Loading Stable Diffusion v1.5 from: /mnt/workspace/Experiments/stable-diffusion-v1-5
+  [SD] Using local cache (local_files_only=True)
+Loading pipeline components...:   0%|                                                                                                    | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  17%|███████████████▎                                                                            | 1/6 [00:00<00:00,  6.54it/s]
+  [SD] Failed to load pipeline: You seem to have cloned a repository without having git-lfs installed. Please install git-lfs and run `git lfs install` followed by `git lfs pull` in the folder you cloned.
+  [SD] Falling back to synthetic data
+  [SDImageDataset] SD unavailable, fallback to random noise
+  [Seed 456] Epoch   0/80 [1%] | PSNR=13.6 | IoU=0.0742 | ETA=0s
+  [Seed 456] Epoch   5/80 [7%] | PSNR=25.8 | IoU=0.8536 | ETA=49s
+  [Seed 456] Epoch  10/80 [13%] | PSNR=27.0 | IoU=0.8654 | ETA=41s
+  [Seed 456] Epoch  15/80 [20%] | PSNR=28.2 | IoU=0.8687 | ETA=37s
+  [Seed 456] Epoch  20/80 [26%] | PSNR=27.2 | IoU=0.8684 | ETA=33s
+  [Seed 456] Epoch  25/80 [32%] | PSNR=28.5 | IoU=0.8685 | ETA=30s
+  [Seed 456] Epoch  30/80 [38%] | PSNR=28.4 | IoU=0.8695 | ETA=27s
+  [Seed 456] Epoch  35/80 [45%] | PSNR=28.6 | IoU=0.8706 | ETA=24s
+  [Seed 456] Epoch  40/80 [51%] | PSNR=28.2 | IoU=0.8711 | ETA=21s
+  [Seed 456] Epoch  45/80 [57%] | PSNR=28.5 | IoU=0.8714 | ETA=18s
+  [Seed 456] Epoch  50/80 [63%] | PSNR=28.5 | IoU=0.8716 | ETA=15s
+  [Seed 456] Epoch  55/80 [70%] | PSNR=28.3 | IoU=0.8717 | ETA=13s
+  [Seed 456] Epoch  60/80 [76%] | PSNR=28.3 | IoU=0.8715 | ETA=10s
+  [Seed 456] Epoch  65/80 [82%] | PSNR=28.3 | IoU=0.8676 | ETA=7s
+  [Seed 456] Epoch  70/80 [88%] | PSNR=28.3 | IoU=0.8638 | ETA=5s
+  [Seed 456] Epoch  75/80 [95%] | PSNR=28.3 | IoU=0.8573 | ETA=2s
+  [Seed 456] Epoch  79/80 [100%] | PSNR=28.2 | IoU=0.8563 | ETA=0s
+  Final: PSNR=28.24  SSIM=0.9475  IoU=0.8563  Mask Mean=0.0086
+
+==================================================
+  Training with seed=789
+==================================================
+
+  [SD] Loading Stable Diffusion v1.5 from: /mnt/workspace/Experiments/stable-diffusion-v1-5
+  [SD] Using local cache (local_files_only=True)
+Loading pipeline components...:   0%|                                                                                                    | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  17%|███████████████▎                                                                            | 1/6 [00:00<00:01,  3.83it/s]
+  [SD] Failed to load pipeline: You seem to have cloned a repository without having git-lfs installed. Please install git-lfs and run `git lfs install` followed by `git lfs pull` in the folder you cloned.
+  [SD] Falling back to synthetic data
+  [SDImageDataset] SD unavailable, fallback to random noise
+
+  [SD] Loading Stable Diffusion v1.5 from: /mnt/workspace/Experiments/stable-diffusion-v1-5
+  [SD] Using local cache (local_files_only=True)
+Loading pipeline components...:   0%|                                                                                                    | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  17%|███████████████▎                                                                            | 1/6 [00:00<00:00,  8.75it/s]
+  [SD] Failed to load pipeline: You seem to have cloned a repository without having git-lfs installed. Please install git-lfs and run `git lfs install` followed by `git lfs pull` in the folder you cloned.
+  [SD] Falling back to synthetic data
+  [SDImageDataset] SD unavailable, fallback to random noise
+  [Seed 789] Epoch   0/80 [1%] | PSNR=14.0 | IoU=0.0804 | ETA=0s
+  [Seed 789] Epoch   5/80 [7%] | PSNR=20.6 | IoU=0.6893 | ETA=44s
+  [Seed 789] Epoch  10/80 [13%] | PSNR=21.2 | IoU=0.6913 | ETA=39s
+  [Seed 789] Epoch  15/80 [20%] | PSNR=21.2 | IoU=0.6915 | ETA=37s
+  [Seed 789] Epoch  20/80 [26%] | PSNR=21.2 | IoU=0.6922 | ETA=32s
+  [Seed 789] Epoch  25/80 [32%] | PSNR=21.3 | IoU=0.6940 | ETA=30s
+  [Seed 789] Epoch  30/80 [38%] | PSNR=21.3 | IoU=0.6947 | ETA=27s
+  [Seed 789] Epoch  35/80 [45%] | PSNR=21.3 | IoU=0.6957 | ETA=24s
+  [Seed 789] Epoch  40/80 [51%] | PSNR=21.3 | IoU=0.6928 | ETA=21s
+  [Seed 789] Epoch  45/80 [57%] | PSNR=21.3 | IoU=0.6889 | ETA=18s
+  [Seed 789] Epoch  50/80 [63%] | PSNR=21.4 | IoU=0.6847 | ETA=16s
+  [Seed 789] Epoch  55/80 [70%] | PSNR=21.4 | IoU=0.6756 | ETA=13s
+  [Seed 789] Epoch  60/80 [76%] | PSNR=21.4 | IoU=0.6675 | ETA=10s
+  [Seed 789] Epoch  65/80 [82%] | PSNR=21.4 | IoU=0.6579 | ETA=8s
+  [Seed 789] Epoch  70/80 [88%] | PSNR=21.4 | IoU=0.6471 | ETA=5s
+  [Seed 789] Epoch  75/80 [95%] | PSNR=21.4 | IoU=0.6440 | ETA=2s
+  [Seed 789] Epoch  79/80 [100%] | PSNR=21.4 | IoU=0.6428 | ETA=0s
+  Final: PSNR=21.42  SSIM=0.9113  IoU=0.6428  Mask Mean=0.0048
+
+==================================================
+  Training with seed=1024
+==================================================
+
+  [SD] Loading Stable Diffusion v1.5 from: /mnt/workspace/Experiments/stable-diffusion-v1-5
+  [SD] Using local cache (local_files_only=True)
+Loading pipeline components...:   0%|                                                                                                    | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  17%|███████████████▎                                                                            | 1/6 [00:00<00:00,  9.68it/s]
+  [SD] Failed to load pipeline: You seem to have cloned a repository without having git-lfs installed. Please install git-lfs and run `git lfs install` followed by `git lfs pull` in the folder you cloned.
+  [SD] Falling back to synthetic data
+  [SDImageDataset] SD unavailable, fallback to random noise
+
+  [SD] Loading Stable Diffusion v1.5 from: /mnt/workspace/Experiments/stable-diffusion-v1-5
+  [SD] Using local cache (local_files_only=True)
+Loading pipeline components...:   0%|                                                                                                    | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  17%|███████████████▎                                                                            | 1/6 [00:00<00:00,  7.38it/s]
+  [SD] Failed to load pipeline: You seem to have cloned a repository without having git-lfs installed. Please install git-lfs and run `git lfs install` followed by `git lfs pull` in the folder you cloned.
+  [SD] Falling back to synthetic data
+  [SDImageDataset] SD unavailable, fallback to random noise
+  [Seed 1024] Epoch   0/80 [1%] | PSNR=14.6 | IoU=0.0824 | ETA=0s
+  [Seed 1024] Epoch   5/80 [7%] | PSNR=22.1 | IoU=0.0870 | ETA=48s
+  [Seed 1024] Epoch  10/80 [13%] | PSNR=22.4 | IoU=0.6320 | ETA=41s
+  [Seed 1024] Epoch  15/80 [20%] | PSNR=22.5 | IoU=0.6332 | ETA=37s
+  [Seed 1024] Epoch  20/80 [26%] | PSNR=22.7 | IoU=0.6334 | ETA=34s
+  [Seed 1024] Epoch  25/80 [32%] | PSNR=22.7 | IoU=0.6338 | ETA=31s
+  [Seed 1024] Epoch  30/80 [38%] | PSNR=22.7 | IoU=0.6337 | ETA=27s
+  [Seed 1024] Epoch  35/80 [45%] | PSNR=22.6 | IoU=0.6337 | ETA=24s
+  [Seed 1024] Epoch  40/80 [51%] | PSNR=22.8 | IoU=0.6327 | ETA=21s
+  [Seed 1024] Epoch  45/80 [57%] | PSNR=22.8 | IoU=0.6332 | ETA=19s
+  [Seed 1024] Epoch  50/80 [63%] | PSNR=22.9 | IoU=0.6324 | ETA=16s
+  [Seed 1024] Epoch  55/80 [70%] | PSNR=22.9 | IoU=0.6299 | ETA=13s
+  [Seed 1024] Epoch  60/80 [76%] | PSNR=22.9 | IoU=0.6303 | ETA=10s
+  [Seed 1024] Epoch  65/80 [82%] | PSNR=22.9 | IoU=0.6217 | ETA=8s
+  [Seed 1024] Epoch  70/80 [88%] | PSNR=22.9 | IoU=0.6089 | ETA=5s
+  [Seed 1024] Epoch  75/80 [95%] | PSNR=22.9 | IoU=0.6019 | ETA=2s
+  [Seed 1024] Epoch  79/80 [100%] | PSNR=22.9 | IoU=0.6010 | ETA=0s
+  Final: PSNR=22.90  SSIM=0.9129  IoU=0.6010  Mask Mean=0.0070
+
+Results saved to /mnt/workspace/Experiments/A8/outputs/results.json
+Convergence curves saved to /mnt/workspace/Experiments/A8/outputs/convergence_curves.png
+Final metrics bars saved to /mnt/workspace/Experiments/A8/outputs/final_metrics_bars.png
+Per-seed convergence saved to /mnt/workspace/Experiments/A8/outputs/per_seed_convergence.png
+
+================================================================================
+  MULTI-SEED SUMMARY TABLE
+================================================================================
+Metric                       Mean        Std        Min        Max
+--------------------------------------------------------------------------------
+PSNR (dB)                 24.1491     2.3115    21.4175    28.2421
+SSIM                       0.9247     0.0133     0.9113     0.9475
+L1 Loss                    0.0129     0.0037     0.0072     0.0178
+Mask Mean                  0.0068     0.0017     0.0048     0.0087
+Mask Contrast          50703.9824 40657.8492 12301.7209 123492.4290
+IoU                        0.6564     0.1089     0.5295     0.8563
+Parameters                1082916          0    1082916    1082916
+================================================================================
+
+A8 experiment complete!
