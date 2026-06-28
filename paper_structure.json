@@ -1,0 +1,2360 @@
+{
+  "n_paragraphs": 300,
+  "n_tables": 2,
+  "n_images": 27,
+  "outline": [
+    {
+      "para_idx": 47,
+      "style": "Heading 1",
+      "text": "1 引言"
+    },
+    {
+      "para_idx": 58,
+      "style": "Heading 1",
+      "text": "2 相关工作"
+    },
+    {
+      "para_idx": 59,
+      "style": "Heading 2",
+      "text": "2.1 图像修复与缺陷检测"
+    },
+    {
+      "para_idx": 62,
+      "style": "Heading 2",
+      "text": "2.2 扩散模型与选择性生成"
+    },
+    {
+      "para_idx": 65,
+      "style": "Heading 2",
+      "text": "2.3 稀疏正则化与自监督学习"
+    },
+    {
+      "para_idx": 68,
+      "style": "Heading 1",
+      "text": "3 方法"
+    },
+    {
+      "para_idx": 69,
+      "style": "Heading 2",
+      "text": "3.1 问题定义"
+    },
+    {
+      "para_idx": 71,
+      "style": "Heading 2",
+      "text": "3.2 网络架构"
+    },
+    {
+      "para_idx": 82,
+      "style": "Heading 2",
+      "text": "3.3 自监督训练策略"
+    },
+    {
+      "para_idx": 83,
+      "style": "Heading 3",
+      "text": "3.3.1 训练对的构造"
+    },
+    {
+      "para_idx": 91,
+      "style": "Heading 3",
+      "text": "3.3.2 损失函数设计"
+    },
+    {
+      "para_idx": 97,
+      "style": "Heading 2",
+      "text": "3.4 稀疏正则化系数 λ_s 的作用机制"
+    },
+    {
+      "para_idx": 103,
+      "style": "Heading 2",
+      "text": "3.5 迭代式选择性重绘"
+    },
+    {
+      "para_idx": 109,
+      "style": "Heading 2",
+      "text": "3.6 两阶段手术式重绘系统"
+    },
+    {
+      "para_idx": 116,
+      "style": "Heading 1",
+      "text": "4 实验与机制验证"
+    },
+    {
+      "para_idx": 117,
+      "style": "Heading 2",
+      "text": "4.1 实验设置"
+    },
+    {
+      "para_idx": 118,
+      "style": "Heading 3",
+      "text": "4.1.1 数据集"
+    },
+    {
+      "para_idx": 120,
+      "style": "Heading 3",
+      "text": "4.1.2 网络配置"
+    },
+    {
+      "para_idx": 122,
+      "style": "Heading 3",
+      "text": "4.1.3 训练细节"
+    },
+    {
+      "para_idx": 126,
+      "style": "Heading 3",
+      "text": "4.1.4 评价指标"
+    },
+    {
+      "para_idx": 133,
+      "style": "Heading 2",
+      "text": "4.2 训练动态分析"
+    },
+    {
+      "para_idx": 142,
+      "style": "Heading 2",
+      "text": "4.3 消融实验"
+    },
+    {
+      "para_idx": 152,
+      "style": "Heading 2",
+      "text": "4.4 可视化结果"
+    },
+    {
+      "para_idx": 170,
+      "style": "Heading 1",
+      "text": "5 应用场景与价值重估"
+    },
+    {
+      "para_idx": 172,
+      "style": "Heading 2",
+      "text": "5.1 风格精修层——打破“AI 感”的最后一道屏障"
+    },
+    {
+      "para_idx": 189,
+      "style": "Heading 2",
+      "text": "5.2 低成本高分辨率增强——算力只花在刀刃上"
+    },
+    {
+      "para_idx": 207,
+      "style": "Heading 2",
+      "text": "5.3 零痕迹局部编辑——只改该改的，其余 100% 不动"
+    },
+    {
+      "para_idx": 213,
+      "style": "Heading 2",
+      "text": "5.4 物理语义错误的定向修复——以小博大"
+    },
+    {
+      "para_idx": 221,
+      "style": "Heading 2",
+      "text": "5.5 实验优先级与资源配置"
+    },
+    {
+      "para_idx": 226,
+      "style": "Heading 1",
+      "text": "6 讨论"
+    },
+    {
+      "para_idx": 227,
+      "style": "Heading 2",
+      "text": "6.1 稀疏正则化与空间选择性的内在联系"
+    },
+    {
+      "para_idx": 230,
+      "style": "Heading 2",
+      "text": "6.2 弱稀疏约束的不稳定性"
+    },
+    {
+      "para_idx": 232,
+      "style": "Heading 2",
+      "text": "6.3 成本效益分析"
+    },
+    {
+      "para_idx": 242,
+      "style": "Heading 2",
+      "text": "6.4 局限性"
+    },
+    {
+      "para_idx": 251,
+      "style": "Heading 2",
+      "text": "6.5 与现有方法的关系"
+    },
+    {
+      "para_idx": 254,
+      "style": "Heading 1",
+      "text": "7 结论与未来工作"
+    },
+    {
+      "para_idx": 268,
+      "style": "Heading 1",
+      "text": "参考文献"
+    }
+  ],
+  "body_order": [
+    {
+      "kind": "para",
+      "idx": 2,
+      "text": "用于图像缺陷检测与修复",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 0,
+      "text": "PSR-Net",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 3,
+      "text": "PSR-Net: Self-Supervised Pixel-level Selective Redrawing",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 22,
+      "text": "3.2 网络架构",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 31,
+      "text": "4.4 可视化结果",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 42,
+      "text": "6.4 局限性",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 52,
+      "text": "需要说明的是，本文当前的研究定位为\"机制验证性先导研究\"：在 64×64 合成退化数据上系统验证 PSR-Net 核心机制（稀疏正则化驱动的选择性重绘）的有效性与可解释性，并据此规划后续在真实数据集、高分辨率以及多应用场景下的扩展实验。本文已在多种退化类型与多种应用场景下开展了系统验证，相关结果见第 4 章实验与第 5 章应用场景；尚未覆盖的扩展实验作为后续工作在第 7 章中讨论。这种分阶段披露方式旨在使审稿人能够清晰区分已被实验证据支撑的结论与待验证的研究假设。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 63,
+      "text": "扩散模型通过逐步去噪的方式生成高质量图像，在图像生成领域取得了突破性进展 [5,6]。Denoising Diffusion Probabilistic Models（DDPM）[5] 及其加速版本 DPM-Solver [19] 奠定了扩散模型的生成范式。Stable Diffusion [7] 将扩散过程迁移至潜在空间，大幅降低了计算成本。在选择性生成方面，Inpainting 扩散模型 [20] 通过掩膜引导局部区域的去噪重绘，但掩膜通常由用户手动提供或通过外部模块生成，限制了其在自动化场景下的可用性。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 71,
+      "text": "3.2 网络架构",
+      "style": "Heading 2"
+    },
+    {
+      "kind": "para",
+      "idx": 83,
+      "text": "3.3.1 训练对的构造",
+      "style": "Heading 3"
+    },
+    {
+      "kind": "para",
+      "idx": 63,
+      "text": "扩散模型通过逐步去噪的方式生成高质量图像，在图像生成领域取得了突破性进展 [5,6]。Denoising Diffusion Probabilistic Models（DDPM）[5] 及其加速版本 DPM-Solver [19] 奠定了扩散模型的生成范式。Stable Diffusion [7] 将扩散过程迁移至潜在空间，大幅降低了计算成本。在选择性生成方面，Inpainting 扩散模型 [20] 通过掩膜引导局部区域的去噪重绘，但掩膜通常由用户手动提供或通过外部模块生成，限制了其在自动化场景下的可用性。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 23,
+      "text": "3.3 自监督训练策略",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 98,
+      "text": "稀疏正则化系数 λ_s 是 PSR-Net 的关键超参数，其取值直接决定了模型的行为模式：",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 105,
+      "text": "I_refined^(k+1) = I_refined^(k) + R^(k+1) ⊙ M^(k+1)                 (3)",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 107,
+      "text": "",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 6,
+      "text": "harry20110514@126.com",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 15,
+      "text": "1 引言",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 26,
+      "text": "3.6 两阶段手术式重绘系统",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 36,
+      "text": "5.4 物理语义错误的定向修复——以小博大",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 54,
+      "text": "提出 PSR-Net 架构，将图像缺陷定位与修复统一在自监督框架中，无需人工标注掩膜即可训练，显著降低数据标注成本。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 58,
+      "text": "2 相关工作",
+      "style": "Heading 1"
+    },
+    {
+      "kind": "para",
+      "idx": 66,
+      "text": "稀疏正则化在机器学习中被广泛用于特征选择与模型压缩 [22]。在深度视觉任务中，L1 正则化与组稀疏（Group Sparsity）被用于鼓励网络关注关键区域 [23]；注意力机制中的稀疏约束亦被证明有助于提升模型的解释性 [24]。然而，将稀疏正则化直接应用于掩膜生成以实现选择性图像重绘，尚未在现有文献中被系统研究，这正是本文工作的切入点。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 67,
+      "text": "自监督学习通过构造前置任务（Pretext Task）从未标注数据中学习有意义的表示 [25]。对比学习 [26] 与掩码自动编码器（Masked Autoencoder）[27] 是当前主流的自监督范式。PSR-Net 的自监督策略不同于传统方法：它并非学习通用特征表示，而是直接利用退化过程作为教师信号——退化过程定义了缺陷的位置与形态，修复目标定义了修复的内容，二者共同构成无需人工标注的训练闭环。这种\"以退化本身为监督\"的范式使 PSR-Net 在数据获取成本上具有显著优势。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 80,
+      "text": "其中 ⊙ 表示逐元素乘法（Hadamard 积），M 在通道维度上广播至 3 通道。该公式的核心思想是：只有在掩膜 M 指示的区域，原始图像才会被叠加残差 R 进行修正；其他区域完全保留原图像素。这是一种“门控机制”，掩膜充当了选择性重绘的开关。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 73,
+      "text": "",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 93,
+      "text": "L = |I_refined − I_gt|_1 + λ_s · mean(M)                 (2)",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 104,
+      "text": "PSR-Net 支持迭代式覆绘机制以进一步提升修复质量。将 I_refined 再次送入同一个覆绘网络（或下一个级联的覆绘网络），生成新的掩膜 M⁽²⁾ 和残差 R⁽²⁾，实现多轮\"观察-选择-重绘\"：",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 55,
+      "text": "设计基于稀疏正则化的损失函数，有效解决无标注情形下的掩膜坍塌问题（即掩膜退化为全 1 或全 0），使模型自发学会精准定位缺陷。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 24,
+      "text": "3.4 稀疏正则化系数 λ_s 的作用机制",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 14,
+      "text": "目  录",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 30,
+      "text": "4.3 消融实验",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 15,
+      "text": "1 引言",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 57,
+      "text": "物理语义错误定向修复：两阶段\"错误定位器 + 局部扩散重绘器\"管线，以极低成本修正多手指等语义级错误。在合成物理错误数据集上验证掩膜 IoU 的工作作为后续补充。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 86,
+      "text": "2.对抗性缺陷模拟：训练一个小型退化网络，学习如何给完美图像添加生成器特有的伪影，使得退化图像更接近真实生成模型的典型缺陷。退化网络可与覆绘网络联合训练，从而生成无限量的配对训练数据。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 82,
+      "text": "3.3 自监督训练策略",
+      "style": "Heading 2"
+    },
+    {
+      "kind": "para",
+      "idx": 89,
+      "text": "",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 86,
+      "text": "2.对抗性缺陷模拟：训练一个小型退化网络，学习如何给完美图像添加生成器特有的伪影，使得退化图像更接近真实生成模型的典型缺陷。退化网络可与覆绘网络联合训练，从而生成无限量的配对训练数据。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 117,
+      "text": "4.1 实验设置",
+      "style": "Heading 2"
+    },
+    {
+      "kind": "para",
+      "idx": 100,
+      "text": "• λ_s 较小（如 0.03）：模型受到轻微惩罚，为追求更好的修复效果愿意扩大修改范围。掩膜覆盖区域变大，修复效果通常更好，但可能误伤正常背景区域。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 86,
+      "text": "2.对抗性缺陷模拟：训练一个小型退化网络，学习如何给完美图像添加生成器特有的伪影，使得退化图像更接近真实生成模型的典型缺陷。退化网络可与覆绘网络联合训练，从而生成无限量的配对训练数据。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 112,
+      "text": "• 局部重绘器（小型扩散模型）：拿到掩膜 M_error 后，仅对标记为异常的区域进行局部重绘（Diffusion Inpainting）。由于重绘区域通常仅占全图的 5%–10%，计算量大幅降低。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 2,
+      "text": "用于图像缺陷检测与修复",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 67,
+      "text": "自监督学习通过构造前置任务（Pretext Task）从未标注数据中学习有意义的表示 [25]。对比学习 [26] 与掩码自动编码器（Masked Autoencoder）[27] 是当前主流的自监督范式。PSR-Net 的自监督策略不同于传统方法：它并非学习通用特征表示，而是直接利用退化过程作为教师信号——退化过程定义了缺陷的位置与形态，修复目标定义了修复的内容，二者共同构成无需人工标注的训练闭环。这种\"以退化本身为监督\"的范式使 PSR-Net 在数据获取成本上具有显著优势。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 54,
+      "text": "提出 PSR-Net 架构，将图像缺陷定位与修复统一在自监督框架中，无需人工标注掩膜即可训练，显著降低数据标注成本。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 39,
+      "text": "6.1 稀疏正则化与空间选择性的内在联系",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 49,
+      "text": "近年来，扩散模型（Diffusion Models）在图像生成领域取得了显著进展 [5,6]，以 Stable Diffusion [7]、Flux [8] 和 Midjourney 为代表的生成大模型已能输出整体构图与语义上高度完整的图像。然而，低成本小模型生成的图像仍存在物理层面与语义层面的错误（如多余的手指、扭曲的关节、错乱的透视等），即便是顶级模型，其输出也常带有所谓的\"AI 感\"——过于光滑的纹理、生硬的笔触与重复的细节 [9]。这些现象意味着图像修复技术仍具有不可替代的应用价值，但其需求已从\"修补低级错误\"转变为\"执行高级的、有选择性的视觉信息增强与替换\"。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 64,
+      "text": "近年来的研究表明，扩散模型在生成过程中可产生不确定性估计 [21]，这为自动识别需重绘的区域提供了可能。然而，将不确定性转化为像素级掩膜并实现自监督的选择性重绘，仍是一个未被充分研究的问题。PSR-Net 通过稀疏正则化约束，在无标注条件下自动学习缺陷掩膜，为这一方向提供了一种轻量、可解释的解决方案。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 97,
+      "text": "3.4 稀疏正则化系数 λ_s 的作用机制",
+      "style": "Heading 2"
+    },
+    {
+      "kind": "para",
+      "idx": 77,
+      "text": "2.选择掩膜 M ∈ [0,1]^{H×W×1}：经 Sigmoid 激活函数，值域为 [0,1]，表示每个像素被修正的强度。M 接近 1 表示该像素需要覆盖重绘，M 接近 0 表示该像素应保持不变。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 63,
+      "text": "扩散模型通过逐步去噪的方式生成高质量图像，在图像生成领域取得了突破性进展 [5,6]。Denoising Diffusion Probabilistic Models（DDPM）[5] 及其加速版本 DPM-Solver [19] 奠定了扩散模型的生成范式。Stable Diffusion [7] 将扩散过程迁移至潜在空间，大幅降低了计算成本。在选择性生成方面，Inpainting 扩散模型 [20] 通过掩膜引导局部区域的去噪重绘，但掩膜通常由用户手动提供或通过外部模块生成，限制了其在自动化场景下的可用性。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 56,
+      "text": "通过详尽的消融实验与可视化分析，系统验证稀疏正则化系数 λ_s 对平衡\"修复精度\"与\"定位准确性\"的关键作用，并揭示弱稀疏约束的不稳定区间现象，为后续超参数选择提供经验依据。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 91,
+      "text": "3.3.2 损失函数设计",
+      "style": "Heading 3"
+    },
+    {
+      "kind": "para",
+      "idx": 8,
+      "text": "2026 年 6 月",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 80,
+      "text": "其中 ⊙ 表示逐元素乘法（Hadamard 积），M 在通道维度上广播至 3 通道。该公式的核心思想是：只有在掩膜 M 指示的区域，原始图像才会被叠加残差 R 进行修正；其他区域完全保留原图像素。这是一种“门控机制”，掩膜充当了选择性重绘的开关。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 42,
+      "text": "6.4 局限性",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 19,
+      "text": "2.3 稀疏正则化与自监督学习",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 118,
+      "text": "4.1.1 数据集",
+      "style": "Heading 3"
+    },
+    {
+      "kind": "para",
+      "idx": 44,
+      "text": "7 结论与未来工作",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 19,
+      "text": "2.3 稀疏正则化与自监督学习",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 83,
+      "text": "3.3.1 训练对的构造",
+      "style": "Heading 3"
+    },
+    {
+      "kind": "para",
+      "idx": 102,
+      "text": "因此，λ_s 的选择需要在\"修复精度\"与\"定位准确性\"之间进行权衡，本文通过消融实验系统分析了这一权衡关系，并在第 6.2 节进一步讨论了弱稀疏约束下的不稳定区间现象。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 115,
+      "text": "补充图 S2  PSR-Net 迭代选择性重绘的逐轮定量对比。左：PSNR 在三轮迭代中保持稳定（ 31.08 dB），表明迭代不引入质量退化；中：SSIM 同步保持稳定（0.9460）；右：掩膜均值（Mask Mean）从第 1 轮的 0.005582 急剧下降至第 2、3 轮的 0.000000，表明模型在第 1 轮完成主要修复后即认为图像已无明显缺陷，不再触发额外重绘，从定量层面验证了迭代机制的早停特性。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 84,
+      "text": "PSR-Net 的训练无需人工标注的缺陷掩膜，而是利用退化过程本身作为监督信号。具体而言，训练对 (I_d, I_gt) 通过以下三种方式构造：",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 65,
+      "text": "2.3 稀疏正则化与自监督学习",
+      "style": "Heading 2"
+    },
+    {
+      "kind": "para",
+      "idx": 78,
+      "text": "最终修复图像通过选择性重绘公式计算：",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 37,
+      "text": "5.5 实验优先级与资源配置",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 117,
+      "text": "4.1 实验设置",
+      "style": "Heading 2"
+    },
+    {
+      "kind": "para",
+      "idx": 0,
+      "text": "PSR-Net",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 37,
+      "text": "5.5 实验优先级与资源配置",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 24,
+      "text": "3.4 稀疏正则化系数 λ_s 的作用机制",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 94,
+      "text": "其中，第一项 |I_refined − I_gt|_1 为 L1 重建损失，保证重绘后图像在像素级上接近真实图像。L1 损失相比 L2 损失更不容易产生模糊结果，且对异常值更鲁棒。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 38,
+      "text": "6 讨论",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 30,
+      "text": "4.3 消融实验",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 14,
+      "text": "目  录",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 71,
+      "text": "3.2 网络架构",
+      "style": "Heading 2"
+    },
+    {
+      "kind": "para",
+      "idx": 9,
+      "text": "\n",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 14,
+      "text": "目  录",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 77,
+      "text": "2.选择掩膜 M ∈ [0,1]^{H×W×1}：经 Sigmoid 激活函数，值域为 [0,1]，表示每个像素被修正的强度。M 接近 1 表示该像素需要覆盖重绘，M 接近 0 表示该像素应保持不变。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 93,
+      "text": "L = |I_refined − I_gt|_1 + λ_s · mean(M)                 (2)",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 79,
+      "text": "I_refined = I_d + R ⊙ M                 （1）",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 13,
+      "text": "\n",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 99,
+      "text": "• λ_s 较大（如 0.1）：模型受到强烈惩罚，仅在确信是缺陷的极小区域激活掩膜。掩膜高度稀疏，定位精准，但可能遗漏微小缺陷或修复不够彻底。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 66,
+      "text": "稀疏正则化在机器学习中被广泛用于特征选择与模型压缩 [22]。在深度视觉任务中，L1 正则化与组稀疏（Group Sparsity）被用于鼓励网络关注关键区域 [23]；注意力机制中的稀疏约束亦被证明有助于提升模型的解释性 [24]。然而，将稀疏正则化直接应用于掩膜生成以实现选择性图像重绘，尚未在现有文献中被系统研究，这正是本文工作的切入点。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 114,
+      "text": "",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 69,
+      "text": "3.1 问题定义",
+      "style": "Heading 2"
+    },
+    {
+      "kind": "para",
+      "idx": 70,
+      "text": "给定一张退化图像 I_d ∈ R^{H×W×3}（包含缺陷的图像）与对应的真实无缺陷图像 I_gt ∈ R^{H×W×3}，目标是学习一个映射函数 f : I_d → I_refined，使得修复后的图像 I_refined 在视觉上接近 I_gt，同时仅对缺陷区域进行修改，完好区域保持不变。与传统全图修复方法不同，本文要求模型不仅输出修复结果，还要显式生成一个选择掩膜 M ∈ [0,1]^{H×W×1} 来标识哪些像素需要修正。这一形式化定义的关键意义在于：将\"修复\"与\"定位\"两类任务统一在单一网络的输出空间中，为后续引入稀疏正则化提供了直接的优化目标。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 32,
+      "text": "5 应用场景与价值重估",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 95,
+      "text": "第二项 λ_s · mean(M) 为稀疏正则化项，这是本文的核心创新。mean(M) 计算掩膜在所有像素上的平均值，作为掩膜激活程度的度量；λ_s 为稀疏正则化系数（超参数），控制稀疏约束的强度。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 65,
+      "text": "2.3 稀疏正则化与自监督学习",
+      "style": "Heading 2"
+    },
+    {
+      "kind": "para",
+      "idx": 57,
+      "text": "物理语义错误定向修复：两阶段\"错误定位器 + 局部扩散重绘器\"管线，以极低成本修正多手指等语义级错误。在合成物理错误数据集上验证掩膜 IoU 的工作作为后续补充。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 98,
+      "text": "稀疏正则化系数 λ_s 是 PSR-Net 的关键超参数，其取值直接决定了模型的行为模式：",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 85,
+      "text": "1.随机块遮挡：在真实高清图像 Igt 上随机放置黑色或白色方块，模拟局部缺陷，得到退化图像 Id。这种退化方式简单且可控，适合验证选择性重绘的核心机制。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 6,
+      "text": "harry20110514@126.com",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 45,
+      "text": "参考文献",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 13,
+      "text": "\n",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 67,
+      "text": "自监督学习通过构造前置任务（Pretext Task）从未标注数据中学习有意义的表示 [25]。对比学习 [26] 与掩码自动编码器（Masked Autoencoder）[27] 是当前主流的自监督范式。PSR-Net 的自监督策略不同于传统方法：它并非学习通用特征表示，而是直接利用退化过程作为教师信号——退化过程定义了缺陷的位置与形态，修复目标定义了修复的内容，二者共同构成无需人工标注的训练闭环。这种\"以退化本身为监督\"的范式使 PSR-Net 在数据获取成本上具有显著优势。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 60,
+      "text": "图像修复（Image Inpainting）旨在填充图像中缺失或损坏的区域 [10]。早期方法基于扩散方程与补丁匹配 [11]，在纹理合成方面取得了一定效果，但对结构化内容的恢复能力有限。深度学习方法引入了编码器-解码器架构 [12] 与生成对抗网络（GAN）[13]，显著提升了修复质量。其中，上下文编码器（Context Encoder）[14] 首次将深度学习应用于图像修复，利用卷积网络学习缺失区域的特征表示。随后，部分卷积（Partial Convolution）[15] 与门控卷积（Gated Convolution）[16] 通过引入可学习的掩膜机制，实现了对不规则掩膜的自适应处理，但仍需在训练时提供掩膜标注。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 87,
+      "text": "3.历史检查点退化：使用生成器训练过程中的早期检查点产出的低质量图像作为 I_d，以最终高质量输出作为 I_gt，让覆绘网络学习修正生成器的典型错误模式。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 31,
+      "text": "4.4 可视化结果",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 60,
+      "text": "图像修复（Image Inpainting）旨在填充图像中缺失或损坏的区域 [10]。早期方法基于扩散方程与补丁匹配 [11]，在纹理合成方面取得了一定效果，但对结构化内容的恢复能力有限。深度学习方法引入了编码器-解码器架构 [12] 与生成对抗网络（GAN）[13]，显著提升了修复质量。其中，上下文编码器（Context Encoder）[14] 首次将深度学习应用于图像修复，利用卷积网络学习缺失区域的特征表示。随后，部分卷积（Partial Convolution）[15] 与门控卷积（Gated Convolution）[16] 通过引入可学习的掩膜机制，实现了对不规则掩膜的自适应处理，但仍需在训练时提供掩膜标注。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 110,
+      "text": "针对低成本小模型生成的图像中常见的物理与语义层面错误（如多根手指、扭曲关节等），纯像素残差修复能力有限，因为这类错误需要高层次语义理解与强大的生成能力。为此，本文提出将\"覆盖重绘\"框架扩展为两阶段\"手术式重绘\"系统：",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 58,
+      "text": "2 相关工作",
+      "style": "Heading 1"
+    },
+    {
+      "kind": "para",
+      "idx": 88,
+      "text": "本文实验主要采用随机块遮挡方式作为基准退化模型，以严格验证稀疏正则化的核心作用。对抗性缺陷模拟与历史检查点退化两种方式的对比实验作为后续工作待补充，以验证 PSR-Net 在不同退化类型下的泛化能力；建议进一步在真实生成缺陷数据集（如 SD 1.5 / SDXL 生成伪影）上进行测试。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 2,
+      "text": "用于图像缺陷检测与修复",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 47,
+      "text": "1 引言",
+      "style": "Heading 1"
+    },
+    {
+      "kind": "para",
+      "idx": 89,
+      "text": "",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 43,
+      "text": "6.5 与现有方法的关系",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 45,
+      "text": "参考文献",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 68,
+      "text": "3 方法",
+      "style": "Heading 1"
+    },
+    {
+      "kind": "para",
+      "idx": 90,
+      "text": "补充图 S5  不同退化类型下 PSR-Net 的修复效果对比。从左至右依次展示：退化图像、随机块遮挡退化下的修复结果、对抗性缺陷模拟下的修复结果、历史检查点退化下的修复结果，以及各自对应的选择掩膜 M。结果表明 PSR-Net 在多种退化模式下均能精准定位缺陷并仅对缺陷区域进行修正，验证了核心机制对不同退化类型的鲁棒性。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 120,
+      "text": "4.1.2 网络配置",
+      "style": "Heading 3"
+    },
+    {
+      "kind": "para",
+      "idx": 9,
+      "text": "\n",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 82,
+      "text": "3.3 自监督训练策略",
+      "style": "Heading 2"
+    },
+    {
+      "kind": "para",
+      "idx": 86,
+      "text": "2.对抗性缺陷模拟：训练一个小型退化网络，学习如何给完美图像添加生成器特有的伪影，使得退化图像更接近真实生成模型的典型缺陷。退化网络可与覆绘网络联合训练，从而生成无限量的配对训练数据。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 9,
+      "text": "\n",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 60,
+      "text": "图像修复（Image Inpainting）旨在填充图像中缺失或损坏的区域 [10]。早期方法基于扩散方程与补丁匹配 [11]，在纹理合成方面取得了一定效果，但对结构化内容的恢复能力有限。深度学习方法引入了编码器-解码器架构 [12] 与生成对抗网络（GAN）[13]，显著提升了修复质量。其中，上下文编码器（Context Encoder）[14] 首次将深度学习应用于图像修复，利用卷积网络学习缺失区域的特征表示。随后，部分卷积（Partial Convolution）[15] 与门控卷积（Gated Convolution）[16] 通过引入可学习的掩膜机制，实现了对不规则掩膜的自适应处理，但仍需在训练时提供掩膜标注。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 80,
+      "text": "其中 ⊙ 表示逐元素乘法（Hadamard 积），M 在通道维度上广播至 3 通道。该公式的核心思想是：只有在掩膜 M 指示的区域，原始图像才会被叠加残差 R 进行修正；其他区域完全保留原图像素。这是一种“门控机制”，掩膜充当了选择性重绘的开关。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 54,
+      "text": "提出 PSR-Net 架构，将图像缺陷定位与修复统一在自监督框架中，无需人工标注掩膜即可训练，显著降低数据标注成本。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 6,
+      "text": "harry20110514@126.com",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 38,
+      "text": "6 讨论",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 94,
+      "text": "其中，第一项 |I_refined − I_gt|_1 为 L1 重建损失，保证重绘后图像在像素级上接近真实图像。L1 损失相比 L2 损失更不容易产生模糊结果，且对异常值更鲁棒。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 3,
+      "text": "PSR-Net: Self-Supervised Pixel-level Selective Redrawing",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 77,
+      "text": "2.选择掩膜 M ∈ [0,1]^{H×W×1}：经 Sigmoid 激活函数，值域为 [0,1]，表示每个像素被修正的强度。M 接近 1 表示该像素需要覆盖重绘，M 接近 0 表示该像素应保持不变。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 31,
+      "text": "4.4 可视化结果",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 93,
+      "text": "L = |I_refined − I_gt|_1 + λ_s · mean(M)                 (2)",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 9,
+      "text": "\n",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 37,
+      "text": "5.5 实验优先级与资源配置",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 47,
+      "text": "1 引言",
+      "style": "Heading 1"
+    },
+    {
+      "kind": "para",
+      "idx": 41,
+      "text": "6.3 成本效益分析",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 97,
+      "text": "3.4 稀疏正则化系数 λ_s 的作用机制",
+      "style": "Heading 2"
+    },
+    {
+      "kind": "para",
+      "idx": 6,
+      "text": "harry20110514@126.com",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 120,
+      "text": "4.1.2 网络配置",
+      "style": "Heading 3"
+    },
+    {
+      "kind": "para",
+      "idx": 14,
+      "text": "目  录",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 6,
+      "text": "harry20110514@126.com",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 82,
+      "text": "3.3 自监督训练策略",
+      "style": "Heading 2"
+    },
+    {
+      "kind": "para",
+      "idx": 57,
+      "text": "物理语义错误定向修复：两阶段\"错误定位器 + 局部扩散重绘器\"管线，以极低成本修正多手指等语义级错误。在合成物理错误数据集上验证掩膜 IoU 的工作作为后续补充。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 6,
+      "text": "harry20110514@126.com",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 119,
+      "text": "实验采用合成退化数据集进行训练与评估。具体地，通过在随机生成的彩色渐变图像上添加黑色或白色方块遮挡来模拟缺陷。图像分辨率为 64×64，每张图像随机添加 3 个大小为 8×8 的遮挡块。训练集包含 200 张退化-清晰图像对，测试集包含 20 对。需要指出的是，当前数据集规模与分辨率为机制验证阶段的设定，其目的在于以最小计算成本验证稀疏正则化对选择性重绘行为的塑造作用，而非追求 SOTA 数值。当前实验使用 64×64 低分辨率合成数据，距离实际应用场景差距较大，需补充 256×256 与 512×512 分辨率实验、真实数据集（Places2 [28]、CelebA-HQ [29]）泛化测试，以及真实生成缺陷（SD 1.5 / SDXL 生成伪影）的修复效果。建议训练集扩至 ≥ 10000 对。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 48,
+      "text": "图像缺陷检测与修复是计算机视觉领域的核心问题之一，广泛应用于工业质检、医学影像、老照片修复以及生成模型输出优化等场景 [1,2]。传统方法主要分为基于全图重建与基于局部修复两大类。全图重建方法虽能恢复缺陷区域的视觉质量，但需对整幅图像进行处理，计算代价高昂，且易在完好区域引入不必要的伪影或失真 [3]；局部修复方法虽可降低计算开销，但通常依赖预先标注的像素级掩膜（Mask）[4]，这种依赖使其在大规模工业部署与生成模型后处理场景下难以规模化。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 95,
+      "text": "第二项 λ_s · mean(M) 为稀疏正则化项，这是本文的核心创新。mean(M) 计算掩膜在所有像素上的平均值，作为掩膜激活程度的度量；λ_s 为稀疏正则化系数（超参数），控制稀疏约束的强度。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 22,
+      "text": "3.2 网络架构",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 43,
+      "text": "6.5 与现有方法的关系",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 20,
+      "text": "3 方法",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 3,
+      "text": "PSR-Net: Self-Supervised Pixel-level Selective Redrawing",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 30,
+      "text": "4.3 消融实验",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 57,
+      "text": "物理语义错误定向修复：两阶段\"错误定位器 + 局部扩散重绘器\"管线，以极低成本修正多手指等语义级错误。在合成物理错误数据集上验证掩膜 IoU 的工作作为后续补充。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 68,
+      "text": "3 方法",
+      "style": "Heading 1"
+    },
+    {
+      "kind": "para",
+      "idx": 119,
+      "text": "实验采用合成退化数据集进行训练与评估。具体地，通过在随机生成的彩色渐变图像上添加黑色或白色方块遮挡来模拟缺陷。图像分辨率为 64×64，每张图像随机添加 3 个大小为 8×8 的遮挡块。训练集包含 200 张退化-清晰图像对，测试集包含 20 对。需要指出的是，当前数据集规模与分辨率为机制验证阶段的设定，其目的在于以最小计算成本验证稀疏正则化对选择性重绘行为的塑造作用，而非追求 SOTA 数值。当前实验使用 64×64 低分辨率合成数据，距离实际应用场景差距较大，需补充 256×256 与 512×512 分辨率实验、真实数据集（Places2 [28]、CelebA-HQ [29]）泛化测试，以及真实生成缺陷（SD 1.5 / SDXL 生成伪影）的修复效果。建议训练集扩至 ≥ 10000 对。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 68,
+      "text": "3 方法",
+      "style": "Heading 1"
+    },
+    {
+      "kind": "para",
+      "idx": 94,
+      "text": "其中，第一项 |I_refined − I_gt|_1 为 L1 重建损失，保证重绘后图像在像素级上接近真实图像。L1 损失相比 L2 损失更不容易产生模糊结果，且对异常值更鲁棒。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 57,
+      "text": "物理语义错误定向修复：两阶段\"错误定位器 + 局部扩散重绘器\"管线，以极低成本修正多手指等语义级错误。在合成物理错误数据集上验证掩膜 IoU 的工作作为后续补充。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 71,
+      "text": "3.2 网络架构",
+      "style": "Heading 2"
+    },
+    {
+      "kind": "para",
+      "idx": 55,
+      "text": "设计基于稀疏正则化的损失函数，有效解决无标注情形下的掩膜坍塌问题（即掩膜退化为全 1 或全 0），使模型自发学会精准定位缺陷。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 57,
+      "text": "物理语义错误定向修复：两阶段\"错误定位器 + 局部扩散重绘器\"管线，以极低成本修正多手指等语义级错误。在合成物理错误数据集上验证掩膜 IoU 的工作作为后续补充。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 94,
+      "text": "其中，第一项 |I_refined − I_gt|_1 为 L1 重建损失，保证重绘后图像在像素级上接近真实图像。L1 损失相比 L2 损失更不容易产生模糊结果，且对异常值更鲁棒。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 114,
+      "text": "",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 6,
+      "text": "harry20110514@126.com",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 69,
+      "text": "3.1 问题定义",
+      "style": "Heading 2"
+    },
+    {
+      "kind": "para",
+      "idx": 102,
+      "text": "因此，λ_s 的选择需要在\"修复精度\"与\"定位准确性\"之间进行权衡，本文通过消融实验系统分析了这一权衡关系，并在第 6.2 节进一步讨论了弱稀疏约束下的不稳定区间现象。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 6,
+      "text": "harry20110514@126.com",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 37,
+      "text": "5.5 实验优先级与资源配置",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 105,
+      "text": "I_refined^(k+1) = I_refined^(k) + R^(k+1) ⊙ M^(k+1)                 (3)",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 71,
+      "text": "3.2 网络架构",
+      "style": "Heading 2"
+    },
+    {
+      "kind": "para",
+      "idx": 20,
+      "text": "3 方法",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 97,
+      "text": "3.4 稀疏正则化系数 λ_s 的作用机制",
+      "style": "Heading 2"
+    },
+    {
+      "kind": "para",
+      "idx": 106,
+      "text": "每一轮掩膜的激活值逐渐变稀疏，表明模型认为剩余像素质量已足够好。训练时可采用课程学习策略：先学习大面积修复，再逐渐增加修复的精细度要求。迭代式选择性重绘目前为理论框架，需在实验中验证 2–3 轮迭代的效果，观察掩膜稀疏度变化趋势以及 PSNR / SSIM 的递进改善情况，并与单轮修复进行定量对比。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 9,
+      "text": "\n",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 97,
+      "text": "3.4 稀疏正则化系数 λ_s 的作用机制",
+      "style": "Heading 2"
+    },
+    {
+      "kind": "para",
+      "idx": 115,
+      "text": "补充图 S2  PSR-Net 迭代选择性重绘的逐轮定量对比。左：PSNR 在三轮迭代中保持稳定（ 31.08 dB），表明迭代不引入质量退化；中：SSIM 同步保持稳定（0.9460）；右：掩膜均值（Mask Mean）从第 1 轮的 0.005582 急剧下降至第 2、3 轮的 0.000000，表明模型在第 1 轮完成主要修复后即认为图像已无明显缺陷，不再触发额外重绘，从定量层面验证了迭代机制的早停特性。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 22,
+      "text": "3.2 网络架构",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 95,
+      "text": "第二项 λ_s · mean(M) 为稀疏正则化项，这是本文的核心创新。mean(M) 计算掩膜在所有像素上的平均值，作为掩膜激活程度的度量；λ_s 为稀疏正则化系数（超参数），控制稀疏约束的强度。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 79,
+      "text": "I_refined = I_d + R ⊙ M                 （1）",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 23,
+      "text": "3.3 自监督训练策略",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 95,
+      "text": "第二项 λ_s · mean(M) 为稀疏正则化项，这是本文的核心创新。mean(M) 计算掩膜在所有像素上的平均值，作为掩膜激活程度的度量；λ_s 为稀疏正则化系数（超参数），控制稀疏约束的强度。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 54,
+      "text": "提出 PSR-Net 架构，将图像缺陷定位与修复统一在自监督框架中，无需人工标注掩膜即可训练，显著降低数据标注成本。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 106,
+      "text": "每一轮掩膜的激活值逐渐变稀疏，表明模型认为剩余像素质量已足够好。训练时可采用课程学习策略：先学习大面积修复，再逐渐增加修复的精细度要求。迭代式选择性重绘目前为理论框架，需在实验中验证 2–3 轮迭代的效果，观察掩膜稀疏度变化趋势以及 PSNR / SSIM 的递进改善情况，并与单轮修复进行定量对比。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 97,
+      "text": "3.4 稀疏正则化系数 λ_s 的作用机制",
+      "style": "Heading 2"
+    },
+    {
+      "kind": "para",
+      "idx": 57,
+      "text": "物理语义错误定向修复：两阶段\"错误定位器 + 局部扩散重绘器\"管线，以极低成本修正多手指等语义级错误。在合成物理错误数据集上验证掩膜 IoU 的工作作为后续补充。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 36,
+      "text": "5.4 物理语义错误的定向修复——以小博大",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 18,
+      "text": "2.2 扩散模型与选择性生成",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 100,
+      "text": "• λ_s 较小（如 0.03）：模型受到轻微惩罚，为追求更好的修复效果愿意扩大修改范围。掩膜覆盖区域变大，修复效果通常更好，但可能误伤正常背景区域。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 33,
+      "text": "5.1 风格精修层——打破“AI 感”的最后一道屏障",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 7,
+      "text": "研究方向：计算机视觉 / 图像修复 / 深度学习",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 23,
+      "text": "3.3 自监督训练策略",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 76,
+      "text": "1.残差图 R ∈ R^{H×W×3}：表示每个像素的颜色修正量，提供修复区域的纹理与颜色信息；",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 77,
+      "text": "2.选择掩膜 M ∈ [0,1]^{H×W×1}：经 Sigmoid 激活函数，值域为 [0,1]，表示每个像素被修正的强度。M 接近 1 表示该像素需要覆盖重绘，M 接近 0 表示该像素应保持不变。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 23,
+      "text": "3.3 自监督训练策略",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 47,
+      "text": "1 引言",
+      "style": "Heading 1"
+    },
+    {
+      "kind": "para",
+      "idx": 63,
+      "text": "扩散模型通过逐步去噪的方式生成高质量图像，在图像生成领域取得了突破性进展 [5,6]。Denoising Diffusion Probabilistic Models（DDPM）[5] 及其加速版本 DPM-Solver [19] 奠定了扩散模型的生成范式。Stable Diffusion [7] 将扩散过程迁移至潜在空间，大幅降低了计算成本。在选择性生成方面，Inpainting 扩散模型 [20] 通过掩膜引导局部区域的去噪重绘，但掩膜通常由用户手动提供或通过外部模块生成，限制了其在自动化场景下的可用性。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 76,
+      "text": "1.残差图 R ∈ R^{H×W×3}：表示每个像素的颜色修正量，提供修复区域的纹理与颜色信息；",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 39,
+      "text": "6.1 稀疏正则化与空间选择性的内在联系",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 14,
+      "text": "目  录",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 48,
+      "text": "图像缺陷检测与修复是计算机视觉领域的核心问题之一，广泛应用于工业质检、医学影像、老照片修复以及生成模型输出优化等场景 [1,2]。传统方法主要分为基于全图重建与基于局部修复两大类。全图重建方法虽能恢复缺陷区域的视觉质量，但需对整幅图像进行处理，计算代价高昂，且易在完好区域引入不必要的伪影或失真 [3]；局部修复方法虽可降低计算开销，但通常依赖预先标注的像素级掩膜（Mask）[4]，这种依赖使其在大规模工业部署与生成模型后处理场景下难以规模化。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 31,
+      "text": "4.4 可视化结果",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 78,
+      "text": "最终修复图像通过选择性重绘公式计算：",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 16,
+      "text": "2 相关工作",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 33,
+      "text": "5.1 风格精修层——打破“AI 感”的最后一道屏障",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 119,
+      "text": "实验采用合成退化数据集进行训练与评估。具体地，通过在随机生成的彩色渐变图像上添加黑色或白色方块遮挡来模拟缺陷。图像分辨率为 64×64，每张图像随机添加 3 个大小为 8×8 的遮挡块。训练集包含 200 张退化-清晰图像对，测试集包含 20 对。需要指出的是，当前数据集规模与分辨率为机制验证阶段的设定，其目的在于以最小计算成本验证稀疏正则化对选择性重绘行为的塑造作用，而非追求 SOTA 数值。当前实验使用 64×64 低分辨率合成数据，距离实际应用场景差距较大，需补充 256×256 与 512×512 分辨率实验、真实数据集（Places2 [28]、CelebA-HQ [29]）泛化测试，以及真实生成缺陷（SD 1.5 / SDXL 生成伪影）的修复效果。建议训练集扩至 ≥ 10000 对。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 120,
+      "text": "4.1.2 网络配置",
+      "style": "Heading 3"
+    },
+    {
+      "kind": "para",
+      "idx": 95,
+      "text": "第二项 λ_s · mean(M) 为稀疏正则化项，这是本文的核心创新。mean(M) 计算掩膜在所有像素上的平均值，作为掩膜激活程度的度量；λ_s 为稀疏正则化系数（超参数），控制稀疏约束的强度。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 2,
+      "text": "用于图像缺陷检测与修复",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 19,
+      "text": "2.3 稀疏正则化与自监督学习",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 26,
+      "text": "3.6 两阶段手术式重绘系统",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 23,
+      "text": "3.3 自监督训练策略",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 114,
+      "text": "",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 33,
+      "text": "5.1 风格精修层——打破“AI 感”的最后一道屏障",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 120,
+      "text": "4.1.2 网络配置",
+      "style": "Heading 3"
+    },
+    {
+      "kind": "para",
+      "idx": 80,
+      "text": "其中 ⊙ 表示逐元素乘法（Hadamard 积），M 在通道维度上广播至 3 通道。该公式的核心思想是：只有在掩膜 M 指示的区域，原始图像才会被叠加残差 R 进行修正；其他区域完全保留原图像素。这是一种“门控机制”，掩膜充当了选择性重绘的开关。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 33,
+      "text": "5.1 风格精修层——打破“AI 感”的最后一道屏障",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 57,
+      "text": "物理语义错误定向修复：两阶段\"错误定位器 + 局部扩散重绘器\"管线，以极低成本修正多手指等语义级错误。在合成物理错误数据集上验证掩膜 IoU 的工作作为后续补充。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 89,
+      "text": "",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 39,
+      "text": "6.1 稀疏正则化与空间选择性的内在联系",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 36,
+      "text": "5.4 物理语义错误的定向修复——以小博大",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 119,
+      "text": "实验采用合成退化数据集进行训练与评估。具体地，通过在随机生成的彩色渐变图像上添加黑色或白色方块遮挡来模拟缺陷。图像分辨率为 64×64，每张图像随机添加 3 个大小为 8×8 的遮挡块。训练集包含 200 张退化-清晰图像对，测试集包含 20 对。需要指出的是，当前数据集规模与分辨率为机制验证阶段的设定，其目的在于以最小计算成本验证稀疏正则化对选择性重绘行为的塑造作用，而非追求 SOTA 数值。当前实验使用 64×64 低分辨率合成数据，距离实际应用场景差距较大，需补充 256×256 与 512×512 分辨率实验、真实数据集（Places2 [28]、CelebA-HQ [29]）泛化测试，以及真实生成缺陷（SD 1.5 / SDXL 生成伪影）的修复效果。建议训练集扩至 ≥ 10000 对。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 71,
+      "text": "3.2 网络架构",
+      "style": "Heading 2"
+    },
+    {
+      "kind": "para",
+      "idx": 89,
+      "text": "",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 43,
+      "text": "6.5 与现有方法的关系",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 113,
+      "text": "整套管线的成本结构为：低成本小模型生成初稿（费用 X）+ 轻量错误定位器（几乎免费）+ 对 5% 区域运行局部重绘器（费用 0.05Y，Y 为小型扩散模型全局生成成本）。总成本 ≈ X + 0.05Y，远低于使用顶级大模型全局重绘的 10X 级别成本。两阶段手术式重绘系统目前为理论框架，需完整的实验验证：检测精度（IoU / F1-score）、两阶段管线 vs. 大模型全局重绘的 PSNR / SSIM / FID 与推理时间对比、不同缺陷面积占比下的成本节省比例。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 54,
+      "text": "提出 PSR-Net 架构，将图像缺陷定位与修复统一在自监督框架中，无需人工标注掩膜即可训练，显著降低数据标注成本。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 68,
+      "text": "3 方法",
+      "style": "Heading 1"
+    },
+    {
+      "kind": "para",
+      "idx": 39,
+      "text": "6.1 稀疏正则化与空间选择性的内在联系",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 16,
+      "text": "2 相关工作",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 28,
+      "text": "4.1 实验设置",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 80,
+      "text": "其中 ⊙ 表示逐元素乘法（Hadamard 积），M 在通道维度上广播至 3 通道。该公式的核心思想是：只有在掩膜 M 指示的区域，原始图像才会被叠加残差 R 进行修正；其他区域完全保留原图像素。这是一种“门控机制”，掩膜充当了选择性重绘的开关。",
+      "style": "Normal"
+    },
+    {
+      "kind": "table",
+      "idx": 1,
+      "rows": [
+        [
+          "批次",
+          "实验编号",
+          "实验内容",
+          "理由 / 核心产出"
+        ],
+        [
+          "第一批\n🔴 最优先",
+          "B1 + B2 + A6 + A7",
+          "风格精修 + 低成本高清增强 + 补充评价指标 + 与现有方法对比",
+          "共用“选择性纹理注入”框架，产出最强学术卖点 + 商业降本数据；同时补齐 SSIM / LPIPS / FID / IoU 评价体系与 Partial Conv / Gated Conv / LaMa 对比基线。"
+        ],
+        [
+          "第二批\n🟡 次优先",
+          "A4 + A5 + B3",
+          "高分辨率实验（256 / 512）+ 真实数据集 + λ_s 连续扫描 Pareto 曲线 + 零痕迹编辑",
+          "提升实验规范性 + 差异化工业指标；验证 PSR-Net 在真实数据与高分辨率下的泛化能力。"
+        ],
+        [
+          "第三批\n🟢 完善",
+          "A1 + A2 + A9",
+          "多退化类型泛化 + 迭代式重绘（2–3 轮）+ 成本效益定量",
+          "完善方法验证；系统验证 PSR-Net 在多种退化类型下的鲁棒性与迭代精修的递进收益。"
+        ],
+        [
+          "第四批\n⚪ 选做",
+          "A3 + A8 + B4",
+          "两阶段手术式重绘系统 + 多随机种子 ± 标准差 + 物理错误定向修复",
+          "展示方案延展性；提供统计意义上的稳定性证据与跨任务迁移潜力。"
+        ]
+      ],
+      "n_rows": 5,
+      "n_cols": 4
+    },
+    {
+      "kind": "para",
+      "idx": 30,
+      "text": "4.3 消融实验",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 114,
+      "text": "",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 107,
+      "text": "",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 71,
+      "text": "3.2 网络架构",
+      "style": "Heading 2"
+    },
+    {
+      "kind": "para",
+      "idx": 58,
+      "text": "2 相关工作",
+      "style": "Heading 1"
+    },
+    {
+      "kind": "para",
+      "idx": 97,
+      "text": "3.4 稀疏正则化系数 λ_s 的作用机制",
+      "style": "Heading 2"
+    },
+    {
+      "kind": "para",
+      "idx": 26,
+      "text": "3.6 两阶段手术式重绘系统",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 89,
+      "text": "",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 2,
+      "text": "用于图像缺陷检测与修复",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 57,
+      "text": "物理语义错误定向修复：两阶段\"错误定位器 + 局部扩散重绘器\"管线，以极低成本修正多手指等语义级错误。在合成物理错误数据集上验证掩膜 IoU 的工作作为后续补充。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 106,
+      "text": "每一轮掩膜的激活值逐渐变稀疏，表明模型认为剩余像素质量已足够好。训练时可采用课程学习策略：先学习大面积修复，再逐渐增加修复的精细度要求。迭代式选择性重绘目前为理论框架，需在实验中验证 2–3 轮迭代的效果，观察掩膜稀疏度变化趋势以及 PSNR / SSIM 的递进改善情况，并与单轮修复进行定量对比。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 22,
+      "text": "3.2 网络架构",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 57,
+      "text": "物理语义错误定向修复：两阶段\"错误定位器 + 局部扩散重绘器\"管线，以极低成本修正多手指等语义级错误。在合成物理错误数据集上验证掩膜 IoU 的工作作为后续补充。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 114,
+      "text": "",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 77,
+      "text": "2.选择掩膜 M ∈ [0,1]^{H×W×1}：经 Sigmoid 激活函数，值域为 [0,1]，表示每个像素被修正的强度。M 接近 1 表示该像素需要覆盖重绘，M 接近 0 表示该像素应保持不变。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 48,
+      "text": "图像缺陷检测与修复是计算机视觉领域的核心问题之一，广泛应用于工业质检、医学影像、老照片修复以及生成模型输出优化等场景 [1,2]。传统方法主要分为基于全图重建与基于局部修复两大类。全图重建方法虽能恢复缺陷区域的视觉质量，但需对整幅图像进行处理，计算代价高昂，且易在完好区域引入不必要的伪影或失真 [3]；局部修复方法虽可降低计算开销，但通常依赖预先标注的像素级掩膜（Mask）[4]，这种依赖使其在大规模工业部署与生成模型后处理场景下难以规模化。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 58,
+      "text": "2 相关工作",
+      "style": "Heading 1"
+    },
+    {
+      "kind": "para",
+      "idx": 2,
+      "text": "用于图像缺陷检测与修复",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 13,
+      "text": "\n",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 97,
+      "text": "3.4 稀疏正则化系数 λ_s 的作用机制",
+      "style": "Heading 2"
+    },
+    {
+      "kind": "para",
+      "idx": 107,
+      "text": "",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 114,
+      "text": "",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 16,
+      "text": "2 相关工作",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 33,
+      "text": "5.1 风格精修层——打破“AI 感”的最后一道屏障",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 2,
+      "text": "用于图像缺陷检测与修复",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 119,
+      "text": "实验采用合成退化数据集进行训练与评估。具体地，通过在随机生成的彩色渐变图像上添加黑色或白色方块遮挡来模拟缺陷。图像分辨率为 64×64，每张图像随机添加 3 个大小为 8×8 的遮挡块。训练集包含 200 张退化-清晰图像对，测试集包含 20 对。需要指出的是，当前数据集规模与分辨率为机制验证阶段的设定，其目的在于以最小计算成本验证稀疏正则化对选择性重绘行为的塑造作用，而非追求 SOTA 数值。当前实验使用 64×64 低分辨率合成数据，距离实际应用场景差距较大，需补充 256×256 与 512×512 分辨率实验、真实数据集（Places2 [28]、CelebA-HQ [29]）泛化测试，以及真实生成缺陷（SD 1.5 / SDXL 生成伪影）的修复效果。建议训练集扩至 ≥ 10000 对。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 79,
+      "text": "I_refined = I_d + R ⊙ M                 （1）",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 28,
+      "text": "4.1 实验设置",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 119,
+      "text": "实验采用合成退化数据集进行训练与评估。具体地，通过在随机生成的彩色渐变图像上添加黑色或白色方块遮挡来模拟缺陷。图像分辨率为 64×64，每张图像随机添加 3 个大小为 8×8 的遮挡块。训练集包含 200 张退化-清晰图像对，测试集包含 20 对。需要指出的是，当前数据集规模与分辨率为机制验证阶段的设定，其目的在于以最小计算成本验证稀疏正则化对选择性重绘行为的塑造作用，而非追求 SOTA 数值。当前实验使用 64×64 低分辨率合成数据，距离实际应用场景差距较大，需补充 256×256 与 512×512 分辨率实验、真实数据集（Places2 [28]、CelebA-HQ [29]）泛化测试，以及真实生成缺陷（SD 1.5 / SDXL 生成伪影）的修复效果。建议训练集扩至 ≥ 10000 对。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 54,
+      "text": "提出 PSR-Net 架构，将图像缺陷定位与修复统一在自监督框架中，无需人工标注掩膜即可训练，显著降低数据标注成本。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 29,
+      "text": "4.2 训练动态分析",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 30,
+      "text": "4.3 消融实验",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 100,
+      "text": "• λ_s 较小（如 0.03）：模型受到轻微惩罚，为追求更好的修复效果愿意扩大修改范围。掩膜覆盖区域变大，修复效果通常更好，但可能误伤正常背景区域。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 90,
+      "text": "补充图 S5  不同退化类型下 PSR-Net 的修复效果对比。从左至右依次展示：退化图像、随机块遮挡退化下的修复结果、对抗性缺陷模拟下的修复结果、历史检查点退化下的修复结果，以及各自对应的选择掩膜 M。结果表明 PSR-Net 在多种退化模式下均能精准定位缺陷并仅对缺陷区域进行修正，验证了核心机制对不同退化类型的鲁棒性。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 79,
+      "text": "I_refined = I_d + R ⊙ M                 （1）",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 22,
+      "text": "3.2 网络架构",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 90,
+      "text": "补充图 S5  不同退化类型下 PSR-Net 的修复效果对比。从左至右依次展示：退化图像、随机块遮挡退化下的修复结果、对抗性缺陷模拟下的修复结果、历史检查点退化下的修复结果，以及各自对应的选择掩膜 M。结果表明 PSR-Net 在多种退化模式下均能精准定位缺陷并仅对缺陷区域进行修正，验证了核心机制对不同退化类型的鲁棒性。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 100,
+      "text": "• λ_s 较小（如 0.03）：模型受到轻微惩罚，为追求更好的修复效果愿意扩大修改范围。掩膜覆盖区域变大，修复效果通常更好，但可能误伤正常背景区域。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 97,
+      "text": "3.4 稀疏正则化系数 λ_s 的作用机制",
+      "style": "Heading 2"
+    },
+    {
+      "kind": "para",
+      "idx": 79,
+      "text": "I_refined = I_d + R ⊙ M                 （1）",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 28,
+      "text": "4.1 实验设置",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 97,
+      "text": "3.4 稀疏正则化系数 λ_s 的作用机制",
+      "style": "Heading 2"
+    },
+    {
+      "kind": "para",
+      "idx": 119,
+      "text": "实验采用合成退化数据集进行训练与评估。具体地，通过在随机生成的彩色渐变图像上添加黑色或白色方块遮挡来模拟缺陷。图像分辨率为 64×64，每张图像随机添加 3 个大小为 8×8 的遮挡块。训练集包含 200 张退化-清晰图像对，测试集包含 20 对。需要指出的是，当前数据集规模与分辨率为机制验证阶段的设定，其目的在于以最小计算成本验证稀疏正则化对选择性重绘行为的塑造作用，而非追求 SOTA 数值。当前实验使用 64×64 低分辨率合成数据，距离实际应用场景差距较大，需补充 256×256 与 512×512 分辨率实验、真实数据集（Places2 [28]、CelebA-HQ [29]）泛化测试，以及真实生成缺陷（SD 1.5 / SDXL 生成伪影）的修复效果。建议训练集扩至 ≥ 10000 对。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 37,
+      "text": "5.5 实验优先级与资源配置",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 105,
+      "text": "I_refined^(k+1) = I_refined^(k) + R^(k+1) ⊙ M^(k+1)                 (3)",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 22,
+      "text": "3.2 网络架构",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 100,
+      "text": "• λ_s 较小（如 0.03）：模型受到轻微惩罚，为追求更好的修复效果愿意扩大修改范围。掩膜覆盖区域变大，修复效果通常更好，但可能误伤正常背景区域。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 114,
+      "text": "",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 13,
+      "text": "\n",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 105,
+      "text": "I_refined^(k+1) = I_refined^(k) + R^(k+1) ⊙ M^(k+1)                 (3)",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 29,
+      "text": "4.2 训练动态分析",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 23,
+      "text": "3.3 自监督训练策略",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 114,
+      "text": "",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 97,
+      "text": "3.4 稀疏正则化系数 λ_s 的作用机制",
+      "style": "Heading 2"
+    },
+    {
+      "kind": "para",
+      "idx": 106,
+      "text": "每一轮掩膜的激活值逐渐变稀疏，表明模型认为剩余像素质量已足够好。训练时可采用课程学习策略：先学习大面积修复，再逐渐增加修复的精细度要求。迭代式选择性重绘目前为理论框架，需在实验中验证 2–3 轮迭代的效果，观察掩膜稀疏度变化趋势以及 PSNR / SSIM 的递进改善情况，并与单轮修复进行定量对比。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 94,
+      "text": "其中，第一项 |I_refined − I_gt|_1 为 L1 重建损失，保证重绘后图像在像素级上接近真实图像。L1 损失相比 L2 损失更不容易产生模糊结果，且对异常值更鲁棒。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 97,
+      "text": "3.4 稀疏正则化系数 λ_s 的作用机制",
+      "style": "Heading 2"
+    },
+    {
+      "kind": "para",
+      "idx": 37,
+      "text": "5.5 实验优先级与资源配置",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 76,
+      "text": "1.残差图 R ∈ R^{H×W×3}：表示每个像素的颜色修正量，提供修复区域的纹理与颜色信息；",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 80,
+      "text": "其中 ⊙ 表示逐元素乘法（Hadamard 积），M 在通道维度上广播至 3 通道。该公式的核心思想是：只有在掩膜 M 指示的区域，原始图像才会被叠加残差 R 进行修正；其他区域完全保留原图像素。这是一种“门控机制”，掩膜充当了选择性重绘的开关。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 69,
+      "text": "3.1 问题定义",
+      "style": "Heading 2"
+    },
+    {
+      "kind": "para",
+      "idx": 47,
+      "text": "1 引言",
+      "style": "Heading 1"
+    },
+    {
+      "kind": "para",
+      "idx": 26,
+      "text": "3.6 两阶段手术式重绘系统",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 94,
+      "text": "其中，第一项 |I_refined − I_gt|_1 为 L1 重建损失，保证重绘后图像在像素级上接近真实图像。L1 损失相比 L2 损失更不容易产生模糊结果，且对异常值更鲁棒。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 37,
+      "text": "5.5 实验优先级与资源配置",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 2,
+      "text": "用于图像缺陷检测与修复",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 71,
+      "text": "3.2 网络架构",
+      "style": "Heading 2"
+    },
+    {
+      "kind": "para",
+      "idx": 69,
+      "text": "3.1 问题定义",
+      "style": "Heading 2"
+    },
+    {
+      "kind": "para",
+      "idx": 2,
+      "text": "用于图像缺陷检测与修复",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 22,
+      "text": "3.2 网络架构",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 54,
+      "text": "提出 PSR-Net 架构，将图像缺陷定位与修复统一在自监督框架中，无需人工标注掩膜即可训练，显著降低数据标注成本。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 79,
+      "text": "I_refined = I_d + R ⊙ M                 （1）",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 97,
+      "text": "3.4 稀疏正则化系数 λ_s 的作用机制",
+      "style": "Heading 2"
+    },
+    {
+      "kind": "para",
+      "idx": 54,
+      "text": "提出 PSR-Net 架构，将图像缺陷定位与修复统一在自监督框架中，无需人工标注掩膜即可训练，显著降低数据标注成本。",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 2,
+      "text": "用于图像缺陷检测与修复",
+      "style": "Normal"
+    },
+    {
+      "kind": "para",
+      "idx": 94,
+      "text": "其中，第一项 |I_refined − I_gt|_1 为 L1 重建损失，保证重绘后图像在像素级上接近真实图像。L1 损失相比 L2 损失更不容易产生模糊结果，且对异常值更鲁棒。",
+      "style": "Normal"
+    }
+  ],
+  "image_locations": [
+    {
+      "para_idx": 73,
+      "rid": "rId6",
+      "target": "media/image1.png",
+      "paragraph_text": ""
+    },
+    {
+      "para_idx": 89,
+      "rid": "rId7",
+      "target": "media/image2.png",
+      "paragraph_text": ""
+    },
+    {
+      "para_idx": 107,
+      "rid": "rId8",
+      "target": "media/image3.png",
+      "paragraph_text": ""
+    },
+    {
+      "para_idx": 114,
+      "rid": "rId9",
+      "target": "media/image4.png",
+      "paragraph_text": ""
+    },
+    {
+      "para_idx": 124,
+      "rid": "rId10",
+      "target": "media/image5.png",
+      "paragraph_text": ""
+    },
+    {
+      "para_idx": 135,
+      "rid": "rId11",
+      "target": "media/image6.png",
+      "paragraph_text": ""
+    },
+    {
+      "para_idx": 140,
+      "rid": "rId12",
+      "target": "media/image7.png",
+      "paragraph_text": ""
+    },
+    {
+      "para_idx": 144,
+      "rid": "rId13",
+      "target": "media/image8.png",
+      "paragraph_text": ""
+    },
+    {
+      "para_idx": 154,
+      "rid": "rId14",
+      "target": "media/image9.png",
+      "paragraph_text": ""
+    },
+    {
+      "para_idx": 160,
+      "rid": "rId15",
+      "target": "media/image10.png",
+      "paragraph_text": ""
+    },
+    {
+      "para_idx": 162,
+      "rid": "rId16",
+      "target": "media/image11.png",
+      "paragraph_text": ""
+    },
+    {
+      "para_idx": 164,
+      "rid": "rId17",
+      "target": "media/image12.png",
+      "paragraph_text": ""
+    },
+    {
+      "para_idx": 166,
+      "rid": "rId18",
+      "target": "media/image13.png",
+      "paragraph_text": ""
+    },
+    {
+      "para_idx": 168,
+      "rid": "rId19",
+      "target": "media/image14.png",
+      "paragraph_text": ""
+    },
+    {
+      "para_idx": 181,
+      "rid": "rId20",
+      "target": "media/image15.png",
+      "paragraph_text": ""
+    },
+    {
+      "para_idx": 183,
+      "rid": "rId21",
+      "target": "media/image16.png",
+      "paragraph_text": ""
+    },
+    {
+      "para_idx": 185,
+      "rid": "rId22",
+      "target": "media/image17.png",
+      "paragraph_text": ""
+    },
+    {
+      "para_idx": 187,
+      "rid": "rId23",
+      "target": "media/image18.png",
+      "paragraph_text": ""
+    },
+    {
+      "para_idx": 198,
+      "rid": "rId24",
+      "target": "media/image19.png",
+      "paragraph_text": ""
+    },
+    {
+      "para_idx": 200,
+      "rid": "rId25",
+      "target": "media/image20.png",
+      "paragraph_text": ""
+    },
+    {
+      "para_idx": 202,
+      "rid": "rId26",
+      "target": "media/image21.png",
+      "paragraph_text": ""
+    },
+    {
+      "para_idx": 204,
+      "rid": "rId27",
+      "target": "media/image22.png",
+      "paragraph_text": ""
+    },
+    {
+      "para_idx": 211,
+      "rid": "rId28",
+      "target": "media/image23.png",
+      "paragraph_text": ""
+    },
+    {
+      "para_idx": 217,
+      "rid": "rId29",
+      "target": "media/image24.png",
+      "paragraph_text": ""
+    },
+    {
+      "para_idx": 219,
+      "rid": "rId30",
+      "target": "media/image25.png",
+      "paragraph_text": ""
+    },
+    {
+      "para_idx": 238,
+      "rid": "rId31",
+      "target": "media/image26.png",
+      "paragraph_text": ""
+    },
+    {
+      "para_idx": 240,
+      "rid": "rId32",
+      "target": "media/image27.png",
+      "paragraph_text": ""
+    }
+  ],
+  "metric_hits": [
+    {
+      "para_idx": 11,
+      "type": "psnr_db",
+      "match": "32.9 dB",
+      "context": "验表明，当 λ_s = 0.1 时，PSR-Net 在保持 32.9 dB 峰值信噪比（仅比无稀疏约束低 0.2 dB）的同时，掩膜对"
+    },
+    {
+      "para_idx": 11,
+      "type": "psnr_db",
+      "match": "0.2 dB",
+      "context": "et 在保持 32.9 dB 峰值信噪比（仅比无稀疏约束低 0.2 dB）的同时，掩膜对比度比率达到 382527 倍，相比无稀疏约"
+    },
+    {
+      "para_idx": 115,
+      "type": "psnr_db",
+      "match": "31.08 dB",
+      "context": "性重绘的逐轮定量对比。左：PSNR 在三轮迭代中保持稳定（ 31.08 dB），表明迭代不引入质量退化；中：SSIM 同步保持稳定（0."
+    },
+    {
+      "para_idx": 125,
+      "type": "psnr_db",
+      "match": "0.5 dB",
+      "context": "2–33 dB 区间。不同种子间的最终 PSNR 极差小于 0.5 dB，验证了稀疏正则化策略在训练稳定性方面的优势，表明 λ_s "
+    },
+    {
+      "para_idx": 148,
+      "type": "psnr_db",
+      "match": "32.9 dB",
+      "context": "重建质量方面，λ_s = 0.1（32.9 dB）与 λ_s = 0（33.1 dB）的 PSNR 差距仅为"
+    },
+    {
+      "para_idx": 148,
+      "type": "psnr_db",
+      "match": "33.1 dB",
+      "context": "面，λ_s = 0.1（32.9 dB）与 λ_s = 0（33.1 dB）的 PSNR 差距仅为 0.2 dB，说明强稀疏约束仅带来"
+    },
+    {
+      "para_idx": 148,
+      "type": "psnr_db",
+      "match": "0.2 dB",
+      "context": "与 λ_s = 0（33.1 dB）的 PSNR 差距仅为 0.2 dB，说明强稀疏约束仅带来极小的重建精度损失。λ_s = 0.0"
+    },
+    {
+      "para_idx": 148,
+      "type": "psnr_db",
+      "match": "23.1 dB",
+      "context": "小的重建精度损失。λ_s = 0.03 的 PSNR 仅为 23.1 dB，远低于其他两组，再次印证了弱稀疏约束的不稳定性。"
+    },
+    {
+      "para_idx": 150,
+      "type": "psnr_db",
+      "match": "0.2 dB",
+      "context": "459× 提升了 301%。这证明强稀疏正则化虽略微牺牲了 0.2 dB 的 PSNR，但换取了极其显著的缺陷定位精度提升。"
+    },
+    {
+      "para_idx": 150,
+      "type": "big_times_unicode",
+      "match": "382527×",
+      "context": "本文最关键的发现。λ_s = 0.1 的掩膜对比度比率达到 382527×，相比 λ_s = 0 的 223271× 提升了 71.4"
+    },
+    {
+      "para_idx": 150,
+      "type": "big_times_unicode",
+      "match": "223271×",
+      "context": "膜对比度比率达到 382527×，相比 λ_s = 0 的 223271× 提升了 71.4%，相比 λ_s = 0.03 的 954"
+    },
+    {
+      "para_idx": 150,
+      "type": "big_times_unicode",
+      "match": "95459×",
+      "context": "71× 提升了 71.4%，相比 λ_s = 0.03 的 95459× 提升了 301%。这证明强稀疏正则化虽略微牺牲了 0.2 "
+    },
+    {
+      "para_idx": 158,
+      "type": "big_times_unicode",
+      "match": "1386×",
+      "context": "缺陷方块所在的区域，而背景区域几乎没有误激活。掩膜对比度从 1386× 到 11402× 不等，均表明掩膜在缺陷区域的激活值远高于"
+    },
+    {
+      "para_idx": 158,
+      "type": "big_times_unicode",
+      "match": "11402×",
+      "context": "域，而背景区域几乎没有误激活。掩膜对比度从 1386× 到 11402× 不等，均表明掩膜在缺陷区域的激活值远高于完好区域。"
+    },
+    {
+      "para_idx": 161,
+      "type": "big_times_unicode",
+      "match": "86902×",
+      "context": "掩膜 M、真实缺陷掩膜以及残差绝对值图。掩膜空间对比度达到 86902×，相比基线提升 65%。"
+    },
+    {
+      "para_idx": 193,
+      "type": "big_times_unicode",
+      "match": "2048×",
+      "context": "• 简单插值放大到目标分辨率（如 2048×2048），得到“结构完整但模糊”的中间图；"
+    },
+    {
+      "para_idx": 197,
+      "type": "psnr_db",
+      "match": "28.7 dB",
+      "context": "在约 0.05% 的极少数高频区域注入细节；PSNR 达到 28.7 dB（逼近 SD img2img 全图重绘的 29.1 dB），"
+    },
+    {
+      "para_idx": 197,
+      "type": "psnr_db",
+      "match": "29.1 dB",
+      "context": "到 28.7 dB（逼近 SD img2img 全图重绘的 29.1 dB），但推理时间仅为后者的约 1/10，定量验证了 B2 实验"
+    },
+    {
+      "para_idx": 205,
+      "type": "psnr_db",
+      "match": "28.7 dB",
+      "context": "在约 0.05% 的极少数高频区域注入细节，PSNR 达到 28.7 dB（逼近 SD img2img 全图重绘的 29.1 dB），"
+    },
+    {
+      "para_idx": 205,
+      "type": "psnr_db",
+      "match": "29.1 dB",
+      "context": "到 28.7 dB（逼近 SD img2img 全图重绘的 29.1 dB），但推理时间仅为后者的约 1/10，定量验证了 B2 实验"
+    },
+    {
+      "para_idx": 218,
+      "type": "times_unicode",
+      "match": "0.1×",
+      "context": "段手术式重绘（PSR-Net 定位 + 局部扩散重绘）以约 0.1× 全图 SD img2img 重绘的成本实现接近的修复质量，"
+    },
+    {
+      "para_idx": 228,
+      "type": "psnr_db",
+      "match": "0.2 dB",
+      "context": "。当 λ_s 从 0 增加到 0.1 时，PSNR 仅下降 0.2 dB，但掩膜对比度比率提升了 71.4%。这一\"以极小精度代价换"
+    },
+    {
+      "para_idx": 231,
+      "type": "psnr_db",
+      "match": "23.1 dB",
+      "context": " 0.03 的异常表现值得关注。在该设置下，PSNR 仅为 23.1 dB，远低于其他两组。这一现象表明，稀疏正则化系数并非\"越大越好"
+    },
+    {
+      "para_idx": 239,
+      "type": "big_times_unicode",
+      "match": "1024×",
+      "context": "在 64×64 / 256×256 / 512×512 / 1024×1024 分辨率下的 GPU 显存占用对比。PSR-Net（"
+    },
+    {
+      "para_idx": 241,
+      "type": "big_times_unicode",
+      "match": "1024×",
+      "context": "前向传播耗时仅数十毫秒，相比扩散模型全图重绘加速数十倍，在 1024×1024 分辨率下推理时间约为 SDXL 全图重绘的 3%，"
+    },
+    {
+      "para_idx": 256,
+      "type": "psnr_db",
+      "match": "32.9 dB",
+      "context": "验表明，当 λ_s = 0.1 时，PSR-Net 在保持 32.9 dB 峰值信噪比（仅比无稀疏约束低 0.2 dB）的同时，掩膜对"
+    },
+    {
+      "para_idx": 256,
+      "type": "psnr_db",
+      "match": "0.2 dB",
+      "context": "et 在保持 32.9 dB 峰值信噪比（仅比无稀疏约束低 0.2 dB）的同时，掩膜对比度比率达到 382527 倍，相比无稀疏约"
+    }
+  ]
+}
